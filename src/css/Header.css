@@ -265,7 +265,8 @@ nav {
 @media screen and (max-width: 414px) {
   header {
     flex-direction: column;
-    height: 896px;
+    height: 856px;
+    overflow-y: hidden;
   }
   .navegation {
     display: none;
@@ -306,7 +307,7 @@ nav {
   .image {
     display: flex;
     width: 400px;
-    height: 400px;
+    height: 300px;
     margin: 440px 0px 0px 0px;
     position: absolute;
     opacity: 0.8;
