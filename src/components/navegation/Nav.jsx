@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
+import ToggleMenu from './toggleMenu';
 // import MyContext from '../context/MyContext';
 import '../../css/Header.css';
 
@@ -41,6 +42,7 @@ function Nav() {
   return  ( 
     <nav className={isScrolled ? 'container-fluid navcolor' : 'container-fluid'}>
     <div className="logo"> <div className="ilogo" />echtiva</div>
+      <ToggleMenu />
       <div className='navegation'> 
         <Link onClick={scrollto}
             activeClass="active"
@@ -80,5 +82,5 @@ function Nav() {
     </nav>
   );
 }
- 
+
 export default Nav;

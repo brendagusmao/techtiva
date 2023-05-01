@@ -194,3 +194,88 @@ nav {
   90% { opacity: 0.50; }
   100% { opacity: 0.30; }
 }
+
+.buttontoggle {
+  margin-top: 30px;
+  z-index: 9;
+  font-family: 'Braah One', sans-serif;
+  font-size: 26px;
+  color: white;
+  display: none;
+  margin: auto;
+}
+
+
+.toggle {
+  margin-top: 20px;
+  width: auto;
+  max-height: 5%;
+  display: flex;
+  z-index: 9;
+  position: fixed;
+}
+
+.toggle ul {
+  margin-left: 210px;
+  margin-top: 60px;
+  gap: 28px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  position: absolute;
+}
+
+.toggle li {
+  background-color: #f4eeff;
+  margin: 2px;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.dark .toggle li {
+  background-color: var(--cor-bg-dark);
+}
+
+.toggle li a {
+  text-decoration: none;
+  color: var(--cor-text-menu);
+}
+
+.dark .toggle li a {
+  color: var(--cor-text-h1-dark);
+}
+
+.icontoggle {
+  background: var(--cor-principal);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 0.9rem;
+  z-index: 9;
+}
+@media screen and (max-width: 414px) {
+  .navegation {
+    display: none;
+  }
+
+  .buttontoggle {
+    display: flex;
+  }
+
+  .toggle ul {
+    margin-left: 250px;
+  }
+
+  .logo {
+    margin-left: 15px;
+  }
+}
