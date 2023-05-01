@@ -1,0 +1,13 @@
+.about {
+    display: flex;
+    background-image: url(https://e0.pxfuel.com/wallpapers/225/248/desktop-wallpaper-black-blue-gradient-linear-midnight-blue-000000-191970-30a%C2%B0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 636px;
+    top: 0px;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    }
