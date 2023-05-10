@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import context from "./MyContext";
 
 function MyProvider({children}) {
+
   const getSavedState = () => {
     return JSON.parse(localStorage.getItem('portfolio'))?.lightMode;
   }
@@ -14,6 +15,25 @@ function MyProvider({children}) {
     lightMode ? document.body.classList.remove('dark') : document.body.classList.add('dark');
     localStorage.setItem('portfolio', JSON.stringify({lightMode}));
   }, [lightMode]);
+
+  const [className, setClassName] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0 && !className) {
+        setClassName(true);
+      } else if (window.scrollY <= 0 && className) {
+        setClassName(false);
+      }
+    };
+    window.addEventListener('load', handleScroll);
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.addEventListener('load', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [className]);
 
   return (
     <context.Provider value={values}>
