@@ -1,0 +1,185 @@
+.Services {
+  display: flex;
+  background-image: url(../images/Desktop\ -\ 2\ \(1\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 836px;
+  top: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.About h1 {
+  font-size: 35px;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.749));
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.874);
+}
+
+.main desc {
+  width: 100%;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 0.874);
+  text-align: justify;
+  font-weight: 500;
+}
+.maintwo img {
+  width: 80%;
+  margin-top: 30px;
+  filter: drop-shadow(0px 1px 1px #1efcff);
+  margin: 100px 0px 0px 50px;
+}
+
+.main {
+  width: 70%;
+  margin: 100px 50px 50px 50px;
+}
+
+.maintwo {
+  display: flex;
+  width: 100%;
+  margin: 50px 0px 0px 150px;
+}
+
+.cardsales {
+  width: 100%;
+  margin: 50px 0px 0px 100px;
+  flex-direction: row;
+}
+.two {
+  width: 300px;
+  height: 400px!important;
+  color: rgba(255, 255, 255, 0.822);
+  border-radius: 15px!important;
+  background: linear-gradient(252.82deg, #09071fa9 -8.09%, #0c0c32d5 28.43%, #0e0f47 77.32%);
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.261));
+  padding: 15px;
+  text-align: center;
+  margin-right: 35px;
+}
+.two h2 {
+  margin: 10px 0px 0px 0px;
+  font-size: 25px!important;
+  letter-spacing: 0.05em;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 0.923);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.crown {
+  background-image: url(../images/coroa.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-left: 25px;
+}
+ul {
+  margin: 25px 0px 0px 10px;
+  justify-content: left;
+  text-align: left!important;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+li {
+  margin: 5px;
+  list-style-type: none;
+  padding: 5px;
+  line-height: 18px;
+  font-weight: 600;
+}
+ul span {
+  color: var(--cor-principal);
+  margin: 10px 10px 0px 0px;
+}
+.value {
+  margin: 20px 0px 0px 0px;
+  font-size: 31px;
+  letter-spacing: 0.05em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.923);
+}
+.value span {
+  font-size: 19px!important;
+  font-weight: 600;
+}
+.two button {
+  background: linear-gradient(142deg, rgba(226, 27, 252, 0.723) 9%, #0cb8f2e3 100%);
+  padding: 15px;
+  margin: 15px;
+  outline: none;
+  border: 1px solid #111130;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.334));
+}
+.card {
+  background-color: #03030f35;
+  color: rgba(253, 253, 253, 0.748);
+  padding: 15px;
+  border-radius: 5px;
+  height: auto;
+  text-align: center;
+}
+.card h1 {
+  font-size: 33px;
+  color: var(--cor-principal);
+  margin-bottom: 5px;
+}
+.card h2 {
+  font-size: 18px;
+  color: var(--cor-01);
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 0.874);
+  margin: 0px 0px 10px 0px;
+}
+.show {
+	-webkit-animation: slide-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both;
+	        animation: slide-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both;
+}
+
+.visible,
+.invisible {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.visible {
+  opacity: 1;
+}
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}

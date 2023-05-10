@@ -21,7 +21,7 @@ function Header() {
         <div className="sidesc desc">
           <h1>  A parceria que faltava para seu negócio decolar</h1>
           <section className="description">
-          Nossa missão é desenvolver soluções digitais para impulsor os resultados dos nossos clientes<p/>
+          Nossa missão é desenvolver soluções digitais para impulsor os resultados dos nossos clientes.<p/>
         </section>
           <button type='button'>
             saiba mais <i><FaArrowRight  /></i>
