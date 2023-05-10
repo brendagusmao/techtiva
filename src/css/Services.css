@@ -189,7 +189,7 @@ ul span {
     opacity: 1;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 717px) {
   /* .Services {
     overflow: hidden;
   } */
@@ -212,5 +212,9 @@ ul span {
   .two {
     width: auto;
     margin-bottom: 30px;
+  }
+  .show {
+    -webkit-animation: slide-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+            animation: slide-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
   }
 }
