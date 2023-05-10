@@ -10,6 +10,7 @@ header {
   align-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
+  overflow-x: hidden;
   }
   
 .dark header {
@@ -268,7 +269,7 @@ nav {
 @media screen and (max-width: 414px) {
   header {
     flex-direction: column;
-    height: 856px;
+    height: 830px;
     overflow-y: hidden;
   }
   .navegation {
@@ -309,7 +310,7 @@ nav {
   }
   .image {
     display: flex;
-    width: 400px;
+    width: 300px;
     height: 300px;
     margin: 440px 0px 0px 0px;
     position: absolute;
