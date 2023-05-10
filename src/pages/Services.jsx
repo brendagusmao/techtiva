@@ -49,7 +49,7 @@ function Services() {
         <div className='value'><span>R$</span> 23,58</div>
         <button type="button"> Selecionar plano</button>
       </div>
-      <div className="two">
+      <div className="two medium">
         <h2>Medium</h2>
         <ul>
           <li><span><BsCheck2Circle /></span>10 dispositivos</li>
@@ -61,7 +61,7 @@ function Services() {
         <div className='value'><span>R$</span> 23,58</div>
         <button type="button"> Selecionar plano</button>
       </div>
-      <div className="two">
+      <div className="two premium">
         <h2>Premium <div className="crown" /></h2>
         <ul>
           <li><span><BsCheck2Circle /></span>10 dispositivos</li>

@@ -64,6 +64,12 @@
   text-align: center;
   margin-right: 35px;
 }
+.medium {
+  background: linear-gradient(02.02deg, #0b082dc5 -8.09%, #0c0c32d5 28.43%, #0e0f47 77.32%);
+}
+.premium {
+  background: linear-gradient(152.02deg, #0b082dc5 -8.09%, #0c0c32d5 28.43%, #0e0f47 77.32%);
+}
 .two h2 {
   margin: 10px 0px 0px 0px;
   font-size: 25px!important;
