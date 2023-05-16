@@ -1,39 +1,16 @@
-import React, { useState, useEffect} from 'react';
+import React, {useContext} from 'react';
 import {BsCheck2Circle} from 'react-icons/bs';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Autoplay, Pagination, Navigation } from "swiper";
-// import {FaReact} from 'react-icons/fa';
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-// import MyContext from '../context/MyContext';
+import MyContext from '../context/MyContext';
 import Sales from '../components/services/Sales';
 import '../css/Services.css';
 
 function Services() {
-  const [className, setClassName] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100 && !className) {
-        setClassName(true);
-      } else if (window.scrollY <= 100 && className) {
-        setClassName(false);
-      }
-    };
-    window.addEventListener('load', handleScroll);
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.addEventListener('load', handleScroll);
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [className]);
+  const {className} = useContext(MyContext);
 
   return  ( 
     <div className="Services" id="services">
       <section className={className ? 'main' : 'main visible'}>
+        <h1 className="titlee"> Escolha um dos nossos planos e crie um site de dar orgulho!</h1>
       <Sales />
       </section>
       <section className={className ? 'maintwo show' : 'maintwo'}>

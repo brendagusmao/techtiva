@@ -1,6 +1,8 @@
+import '../css/Projects.css';
+
 function Projects() {
     return (
-    <div className="About" id="Projects">
+    <div className="Projects" id="projects">
         oioioi
     </div>
     );

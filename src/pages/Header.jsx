@@ -1,4 +1,4 @@
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaWhatsapp } from 'react-icons/fa';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { BiMouse } from 'react-icons/bi';
 import { BsChevronDoubleDown } from 'react-icons/bs';
@@ -23,9 +23,14 @@ function Header() {
           <section className="description">
           Nossa missão é desenvolver soluções digitais para impulsor os resultados dos nossos clientes.<p/>
         </section>
+          <section className="buttoncard">
           <button type='button'>
             saiba mais <i><FaArrowRight  /></i>
           </button>
+          <button type='button' style={{background: 'green', color:'white'}}>
+            Contate <i><FaWhatsapp  /></i>
+          </button>
+          </section>
         </div>
         <div className="image" />
         <div className='arrowdown'>

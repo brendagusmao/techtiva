@@ -8,21 +8,19 @@ function MyProvider({children}) {
   }
 
   const [lightMode, setLightMode] = useState(getSavedState() || false);
-
-  const values = {lightMode, setLightMode};
+  const [className, setClassName] = useState(false);
+  const values = {lightMode, setLightMode, className};
 
   useEffect(() => {
     lightMode ? document.body.classList.remove('dark') : document.body.classList.add('dark');
     localStorage.setItem('portfolio', JSON.stringify({lightMode}));
   }, [lightMode]);
 
-  const [className, setClassName] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0 && !className) {
+      if (window.scrollY > 100 && !className) {
         setClassName(true);
-      } else if (window.scrollY <= 0 && className) {
+      } else if (window.scrollY <= 100 && className) {
         setClassName(false);
       }
     };

@@ -39,6 +39,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 999;
+  background-color: #0e0f4785;
 }
 
 .navcolor {
@@ -47,7 +48,7 @@ nav {
 }
 
 .logo {
-  font-family: 'Braah One', sans-serif;
+  font-family: 'Wix Madefor Display', sans-serif;
   font-size: 26px;
   color: white;
   margin-top: 8px;
@@ -58,12 +59,12 @@ nav {
 }
 
 .logo .ilogo {
-  background-image: url(../images/logo2.png);
+  background-image: url(../images/logoroxa.png);
   background-size: cover;
-  width: 30px;
-  height: 30px;
-  margin-right: 0px;
-  margin-top: -5px;
+  width: 45px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 0px;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.749));
 }
 
@@ -142,6 +143,10 @@ nav {
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.334));
 }
 
+.buttoncard {
+  width: 100%;
+  display: flex;
+}
 .desc i {
   margin: 10px;
   color: white;

@@ -1,0 +1,14 @@
+.Projects {
+    display: flex;
+    background-image: url(../images/image\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 936px;
+    top: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    overflow-x: hidden;
+  }

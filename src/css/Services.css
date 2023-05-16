@@ -3,7 +3,7 @@
   background-image: url(../images/Desktop\ -\ 2\ \(1\).png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 836px;
+  height: 936px;
   top: 0px;
   align-items: flex-start;
   justify-content: flex-start;
@@ -24,7 +24,7 @@
 
 .main desc {
   width: 100%;
-  font-size: 15px;
+  font-size: 13px;
   font-family: 'Montserrat', sans-serif;
   color: rgba(255, 255, 255, 0.874);
   text-align: justify;
@@ -146,9 +146,9 @@ ul span {
   margin-bottom: 5px;
 }
 .card h2 {
-  font-size: 18px;
+  font-size: 17px;
   color: var(--cor-01);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Wix Madefor Display', sans-serif;
   color: rgba(255, 255, 255, 0.874);
   margin: 0px 0px 10px 0px;
 }
@@ -157,6 +157,18 @@ ul span {
 	        animation: slide-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both;
 }
 
+.titlee {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  justify-content: center;
+  margin: 100px 0px 0px 100px;
+}
 .visible,
 .invisible {
   opacity: 0;

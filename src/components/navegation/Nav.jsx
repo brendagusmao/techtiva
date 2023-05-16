@@ -41,7 +41,7 @@ function Nav() {
 
   return  ( 
     <nav className={isScrolled ? 'container-fluid navcolor' : 'container-fluid'}>
-    <div className="logo"> <div className="ilogo" />echtiva</div>
+    <div className="logo"> <div className="ilogo" />techtiva</div>
       <ToggleMenu />
       <div className='navegation'> 
         <Link onClick={scrollto}
@@ -70,6 +70,14 @@ function Nav() {
             offset={70}
             data-section-id="services"
             duration={500} className="scrollto">Serviços</Link>
+        <Link onClick={scrollto}
+            activeClass="active"
+            to="section1"
+            spy={true}
+            smooth={true}
+            offset={70}
+            data-section-id="projects"
+            duration={500} className="scrollto">Projetos</Link>
         <Link onClick={scrollto}
             activeClass="active"
             to="section1"
