@@ -1,14 +1,39 @@
 .Projects {
-    display: flex;
-    background-image: url(../images/image\ 2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 936px;
-    top: 0px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    overflow-x: hidden;
-  }
+  display: flex;
+  background-image: url(../images/image\ 2.png)!important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 736px;
+  top: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.gridprojects {
+  grid-gap: 0px;
+  align-content: center;
+  display: grid;
+  gap: 30px;
+  grid-template: auto/ 500px 1fr;
+  justify-items: center;
+  margin: 5px;
+  justify-content: center;
+  align-items: start;
+}
+
+.oioi {
+  background-color: #462892;
+  border-radius: 15px 15px 0 0;
+  -webkit-filter: drop-shadow(0 1px 1px rgba(0,0,0,.05));
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,.05));
+  height: auto;
+  width: 450px;
+}
+.oioi img {
+  width: 100%;
+  height: auto;
+}

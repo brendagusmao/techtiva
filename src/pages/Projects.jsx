@@ -1,9 +1,11 @@
 import '../css/Projects.css';
-
+import Oi from './oi';
 function Projects() {
     return (
     <div className="Projects" id="projects">
-        oioioi
+        <section className="gridprojects">
+        <Oi />
+        </section>
     </div>
     );
   }
