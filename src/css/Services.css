@@ -3,7 +3,7 @@
   background-image: url(../images/services2.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1726px;
+  height: 1026px;
   top: 0px;
   align-items: flex-start;
   justify-content: flex-start;
@@ -65,7 +65,11 @@
   margin-right: 35px;
 }
 .medium {
-  background: linear-gradient(02.02deg, #0b082dc5 -8.09%, #0c0c32d5 28.43%, #0e0f47 77.32%);
+  background: linear-gradient(02.02deg, #4d025898 -8.09%, #0c0c32d5 28.43%, #0e0f47 77.32%);
+  /* box-shadow: 1px 1px 15px #9903b0c1; */
+  /* outline:1px solid #08061bc5;
+  outline-offset: -15px;
+  border-radius: 10px; */
 }
 .premium {
   background: linear-gradient(152.02deg, #0b082dc5 -8.09%, #0c0c32d5 28.43%, #0e0f47 77.32%);
@@ -119,7 +123,7 @@ ul span {
   font-weight: 600;
 }
 .two button {
-  background: linear-gradient(142deg, rgba(226, 27, 252, 0.723) 9%, #0cb8f2e3 100%);
+  background: #a14af5;
   padding: 15px;
   margin: 15px;
   outline: none;
@@ -134,7 +138,7 @@ ul span {
 }
 .card {
   width: 300px;
-  background-color: #03030f35;
+  background-color: #171759c3;
   color: rgba(253, 253, 253, 0.748);
   padding: 15px;
   border-radius: 5px;
@@ -234,5 +238,8 @@ ul span {
     text-align: center;
     width: 90%;
     margin: 25px 20px 30px 20px;
+  }
+  .Services {
+    height: 1726px;
   }
 }

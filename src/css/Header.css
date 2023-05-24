@@ -76,11 +76,11 @@ nav {
 }
 
 .navegation a {
-  margin: 10px;
+  margin: 5px;
   padding: 10px;
   font-family: 'DM Sans', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.808);
   text-decoration: none;
   outline: none;
@@ -103,7 +103,7 @@ nav {
 
 .desc {
   display: flex;
-  width: 600px;
+  width: 550px;
   height: auto;
   padding: 10px;
   color: rgba(255, 255, 255, 0.874);
@@ -111,13 +111,14 @@ nav {
   align-items: center;
   justify-content: flex-start;
   align-content: center;
-  font-size: 17px;
+  font-size: 16px;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 
 .desc h1 {
+  font-family: 'Wix Madefor Display', sans-serif;
   font-size: 40px;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.749));
   margin-left: 10px;
@@ -216,8 +217,9 @@ nav {
 
 
 .toggle {
+  background-color: wheat;
   margin-top: 20px;
-  width: auto;
+  width: 100%;
   max-height: 5%;
   display: flex;
   z-index: 9;
@@ -225,20 +227,28 @@ nav {
 }
 
 .toggle ul {
-  margin-left: 210px;
-  margin-top: 60px;
+  background-color: #111130bd;
+  margin-top: 15px;
+  margin-left: -5px;
   gap: 28px;
   font-size: 1.4rem;
   font-weight: 600;
   align-items: center;
   list-style: none;
-  height: 100%;
+  height: 600px;
+  width: 100%;
   position: absolute;
+  backdrop-filter: blur(4px);
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .toggle li {
   background-color: #f4eeff;
-  margin: 2px;
+  margin: 2px 0px 0px 0px;
   padding: 8px;
   border-radius: 5px;
   font-size: 15px;
@@ -248,11 +258,14 @@ nav {
 
 .dark .toggle li {
   background-color: var(--cor-bg-dark);
+  color: white;
 }
 
 .toggle li a {
   text-decoration: none;
-  color: var(--cor-text-menu);
+  color: white;
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-size: 18px;
 }
 
 .dark .toggle li a {
@@ -263,18 +276,18 @@ nav {
   background: var(--cor-principal);
   border-radius: 5px;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 20px;
   margin-right: 10px;
   padding: 3px;
   padding-left: 5px;
   padding-right: 5px;
-  width: 0.9rem;
+  width: auto;
   z-index: 9;
 }
 @media screen and (max-width: 414px) {
   header {
     flex-direction: column;
-    height: 830px;
+    height: 700px;
     overflow-y: hidden;
   }
   .navegation {
@@ -286,7 +299,7 @@ nav {
   }
 
   .toggle ul {
-    margin-left: 250px;
+    margin-left: -5px;
   }
 
   .logo {
@@ -306,15 +319,16 @@ nav {
   }
   
   .description {
-    margin: 40px 30px 0px 0px;
-    text-align: left;
+    width: 300px;
+    margin: 50px 50px 0px 0px;
+    text-align: justify;
   }
   
   .desc button {
-    margin: 35px 0px 0px 0px;
+    margin: 35px 0px 0px 8px;
   }
   .image {
-    display: flex;
+    display: none;
     width: 300px;
     height: 300px;
     margin: 440px 0px 0px 0px;

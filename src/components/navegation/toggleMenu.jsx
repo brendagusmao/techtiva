@@ -32,7 +32,10 @@ function ToggleMenu() {
         </div>
           <div className="toggle">
             <ul>
-            <><li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#home">home</a></li><li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#about">about</a></li><li><RiPagesFill className="icontoggle" /><a onClick={toggleMenu} href="#projects">projects</a></li><li><MdPermContactCalendar className="icontoggle" /><a onClick={toggleMenu} href="#contact">contact</a></li></>
+              <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#home">home</a></li>
+              <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#about">about</a></li>
+              <li><RiPagesFill className="icontoggle" /><a onClick={toggleMenu} href="#projects">projects</a></li>
+              <li><MdPermContactCalendar className="icontoggle" /><a onClick={toggleMenu} href="#contact">contact</a></li>
             </ul>
           </div>
     </>

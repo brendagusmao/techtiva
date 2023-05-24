@@ -38,9 +38,10 @@ function Header() {
           <BiMouse />
         </div>
         <div className="down">
-        <Link onClick={() => scrollToSection("about")}
+        <Link onClick={() => scrollToSection("services")}
         activeClass="active"
         to="section1"
+         data-section-id="services"
         spy={true}
         smooth={true}
         offset={-70}
