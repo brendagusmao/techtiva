@@ -119,7 +119,7 @@ ul span {
   color: rgba(255, 255, 255, 0.923);
 }
 .value span {
-  font-size: 19px!important;
+  font-size: 15px;
   font-weight: 600;
 }
 .two button {
@@ -149,6 +149,10 @@ ul span {
   font-size: 33px;
   color: var(--cor-principal);
   margin-bottom: 5px;
+}
+.mont {
+  font-size: 10px;
+  letter-spacing: 0;
 }
 .card h2 {
   font-size: 17px;

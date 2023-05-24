@@ -73,6 +73,30 @@
   border:5px solid rgb(48, 48, 194);
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.422));
 }
+
+.ant-modal-title {
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-size: 20px;
+  text-decoration: 1px solid #eee;
+}
+.ant-modal-body {
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+.inputname {
+  width: 400px;
+}
+.inputddd{
+  width: 'calc(15% - 8px)';
+}
+.inputphone {
+  width: 'calc(85,5% - 8px)';
+}
+.inputemail {
+  width: 340px;
+}
+.ant-select-arrow {
+  top: 30%;
+}
 @media screen and (max-width: 717px) {
   .gridprojects {
     grid-gap: 0px;
@@ -96,5 +120,20 @@
   }
   .ant-image-preview-img-wrapper {
     margin-top: 100px;
+  }
+  .inputname {
+    width: 300px;
+  }
+  .inputddd{
+    width: 50px;
+  }
+  .inputphone {
+    width: 250px;
+  }
+  .inputemail {
+    width: 250px;
+  }
+  .ant-select-arrow {
+    margin-top: -50px;
   }
 }
