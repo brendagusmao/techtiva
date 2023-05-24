@@ -94,4 +94,7 @@
   .ant-image-preview-operations-progress {
     margin-top: -50px;
   }
+  .ant-image-preview-img-wrapper {
+    margin-top: 100px;
+  }
 }
