@@ -88,4 +88,10 @@
   .Projects h1 {
     margin-top: 0px;
   }
+  .ant-image-preview-operations {
+    height: 80px;
+  }
+  .ant-image-preview-operations-progress {
+    margin-top: -50px;
+  }
 }
