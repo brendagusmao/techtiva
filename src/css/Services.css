@@ -49,7 +49,7 @@
 }
 
 .cardsales {
-  width: 100%;
+  width: 110%;
   margin: 50px 0px 0px 100px;
   flex-direction: row;
 }
@@ -133,6 +133,7 @@ ul span {
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.334));
 }
 .card {
+  width: 300px;
   background-color: #03030f35;
   color: rgba(253, 253, 253, 0.748);
   padding: 15px;

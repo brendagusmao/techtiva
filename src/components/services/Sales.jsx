@@ -10,7 +10,7 @@ function Sales() {
     return (
     <section className="cardsales">
       <Swiper
-      spaceBetween={50}
+      spaceBetween={30}
       slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
@@ -27,7 +27,7 @@ function Sales() {
       <SwiperSlide>
         <div class="card">
           <h1><SiPagespeedinsights /></h1><p />
-          <h2>Subtitulo </h2><p />
+          <h2>Subt </h2><p />
           <desc>texto aqui falando o que quiser, tipo blablabla</desc>
         </div>
       </SwiperSlide>
