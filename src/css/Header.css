@@ -1,9 +1,9 @@
 header {
   display: flex;
-  background-image: url(../images/Untitled\ \(1\).png);
+  background-image: url(../images/bgheader.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 636px;
+  height: 606px;
   top: 0px;
   align-items: center;
   justify-content: space-between;
