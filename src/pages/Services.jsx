@@ -10,7 +10,7 @@ import '../css/Services.css';
 function Services() {
   const {className} = useContext(MyContext);
   const [modal1Open, setModal1Open] = useState(false);
-  // const [modal2Open, setModal2Open] = useState(false);
+  const [modal2Open, setModal2Open] = useState(false);
 
   return  ( 
     <div className="Services" id="services">
@@ -30,8 +30,7 @@ function Services() {
         </ul>
         <div className='value'><span>R$</span> 23,58 <span className='mont'>/mensal</span></div>
         <button type="button" onClick={() => setModal1Open(true)}> Selecionar plano</button>
-      </div>
-      <Modal
+        <Modal
         title="Preencha o Formulário abaixo"
         centered
         open={modal1Open}
@@ -40,6 +39,7 @@ function Services() {
       >
         <FormSale />
       </Modal>
+      </div>
       <div className="two medium">
         <h2>Medium</h2>
         <ul>
@@ -50,7 +50,7 @@ function Services() {
           <li><span><BsCheck2Circle /></span>10 dispositivos</li>
         </ul>
         <div className='value'><span>R$</span> 23,58 <span className='mont'>/mensal</span></div>
-        <button type="button"> Selecionar plano</button>
+        <button type="button"  onClick={() => setModal2Open(true)}> Selecionar plano</button>
       </div>
       <div className="two premium">
         <h2>Premium <div className="crown" /></h2>
@@ -63,6 +63,15 @@ function Services() {
         </ul>
         <button type="button"> Fazer Orçamento</button>
       </div>
+      <Modal
+        title="Preencha o Formulário abaixo"
+        centered
+        open={modal2Open}
+        onOk={() => setModal2Open(false)}
+        onCancel={() => setModal2Open(false)}
+      >
+        <FormSale />
+      </Modal>
       </section>
     </div>
   );

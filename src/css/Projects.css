@@ -68,7 +68,9 @@
 }
 .oioi img {
   width: 100%;
-  height: auto;
+  max-width: 302px;
+  height: 100%;
+  max-height: 684px;
   border-radius: 10px;
   border:5px solid rgb(48, 48, 194);
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.422));
@@ -95,6 +97,9 @@
   width: 340px;
 }
 .ant-select-arrow {
+  top: 30%;
+}
+.ant-select .ant-select-arrow {
   top: 30%;
 }
 @media screen and (max-width: 717px) {

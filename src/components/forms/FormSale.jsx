@@ -122,7 +122,7 @@ const Forms = () => {
         />
         </Form.Item>
         <Form.Item
-          name={['basic', 'medium']}
+          name={['basic', 'medium', 'premium']}
           noStyle
           rules={[
             {
