@@ -1,6 +1,6 @@
 header {
   display: flex;
-  background-image: url(../images/bgheader.png);
+  background-image: url(../images/Desktop\ -\ 1.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 606px;
@@ -43,7 +43,7 @@ nav {
 }
 
 .navcolor {
-  background-color: #0c0c28c6;
+  background-color: #0e0f47d6;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.213));
 }
 

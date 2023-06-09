@@ -1,7 +1,7 @@
 .Services {
   display: flex;
-  background-image: url(../images/services2.png);
-  background-size: cover;
+  background-image: url(../images/bgservices2.png);
+  background-size: contain;
   background-repeat: no-repeat;
   height: 1026px;
   top: 0px;
@@ -11,6 +11,7 @@
   flex-wrap: nowrap;
   flex-direction: column;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .About h1 {
@@ -39,7 +40,7 @@
 
 .main {
   width: 70%;
-  margin: 100px 50px 50px 50px;
+  margin: 20px 50px 50px 50px;
 }
 
 .maintwo {
@@ -138,7 +139,7 @@ ul span {
 }
 .card {
   width: 300px;
-  background-color: #171759c3;
+  background-color: #0e0f47;
   color: rgba(253, 253, 253, 0.748);
   padding: 15px;
   border-radius: 5px;
@@ -173,8 +174,8 @@ ul span {
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  color: white;
+  font-size: 25px;
+  color: rgb(15, 15, 15);
   justify-content: center;
   margin: 100px 0px 0px 100px;
 }

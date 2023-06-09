@@ -20,7 +20,7 @@ function Projects() {
     <div className="Projects" id="projects">
         <h1 data-anime="top"> Nossos Projetos</h1>
         <h2 data-anime="top"> Confira abaixo nossos modelos</h2>
-        <section>
+        <section data-anime="test">
         <Oi />
         </section>
     </div>
