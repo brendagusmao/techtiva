@@ -36,7 +36,7 @@ function Services() {
         <section className='feat width' data-anime="left">
         <img src="https://o.remove.bg/downloads/05ed821e-fb6d-457d-a2b4-531995c5db39/11-Best-Web-Design-Companies-in-India-removebg-preview.png" alt="" width={'100%'} />
         </section>
-        <div className='feat' data-anime="right">
+        <div className='feat' data-anime="top">
         <h1>Construa uma presença online poderosa e cativante</h1>
         <desc>A primeira impressão importa, especialmente no mundo digital. Nossos templates profissionais e designs modernos irão cativar seus visitantes e transformá-los em clientes fiéis. Com foco em usabilidade e experiência do usuário, nossas páginas garantem uma navegação intuitiva e uma apresentação visualmente impressionante.
         </desc>
