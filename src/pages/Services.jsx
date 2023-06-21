@@ -7,6 +7,7 @@ import MyContext from '../context/MyContext';
 import Sales from '../components/services/Sales';
 import { debounce, animeScroll } from '../components/scrollUtils';
 import '../css/Services.css';
+import Web from '../images/Design team-amico (1).svg';
 
 function Services() {
   const {className} = useContext(MyContext);
@@ -34,7 +35,7 @@ function Services() {
       </section>
       <section className='maintree'>
         <section className='feat width' data-anime="left">
-        <img src="https://o.remove.bg/downloads/05ed821e-fb6d-457d-a2b4-531995c5db39/11-Best-Web-Design-Companies-in-India-removebg-preview.png" alt="" width={'100%'} />
+        <img src={Web} alt="" width={'80%'} />
         </section>
         <div className='feat' data-anime="top">
         <h1>Construa uma presença online poderosa e cativante</h1>
