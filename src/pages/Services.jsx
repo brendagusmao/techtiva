@@ -1,18 +1,13 @@
 import React, {useContext, useEffect} from 'react';
-import FormSale from '../components/forms/FormSale';
-import { Modal } from 'antd';
-import { useState } from 'react';
-import {BsCheck2Circle} from 'react-icons/bs';
 import MyContext from '../context/MyContext';
 import Sales from '../components/services/Sales';
 import { debounce, animeScroll } from '../components/scrollUtils';
 import '../css/Services.css';
 import Web from '../images/Design team-amico (1).svg';
+import Plans from '../components/services/Plans';
 
 function Services() {
   const {className} = useContext(MyContext);
-  const [modal1Open, setModal1Open] = useState(false);
-  const [modal2Open, setModal2Open] = useState(false);
   useEffect(() => {
     const handleScroll = debounce(() => {
       animeScroll();
@@ -27,7 +22,7 @@ function Services() {
     };
   }, []);
   return  ( 
-    <div className="Services" id="services">
+    <div className="Services">
       <section className={className ? 'main' : 'main visible'} data-anime="top">
         <h1 className="titlee">Construa um site de sucesso que reflete a excelência da sua empresa! Escolha um dos nossos planos e destaque-se na web.
 </h1>
@@ -35,7 +30,7 @@ function Services() {
       </section>
       <section className='maintree'>
         <section className='feat width' data-anime="left">
-        <img src={Web} alt="" width={'80%'} />
+        <img src={Web} alt="" width={'80%'} loading="eager"/>
         </section>
         <div className='feat' data-anime="top">
         <h1>Construa uma presença online poderosa e cativante</h1>
@@ -46,61 +41,7 @@ function Services() {
         </desc>
         </div>
       </section>
-        <section className={className ? 'maintwo show' : 'maintwo'}>
-      <div className="two">
-        <h2>Basic</h2>
-        <ul>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-        </ul>
-        <div className='value'><span>R$</span> 23,58 <span className='mont'>/mensal</span></div>
-        <button type="button" onClick={() => setModal1Open(true)}> Selecionar plano</button>
-        <Modal
-        title="Preencha o Formulário abaixo"
-        centered
-        open={modal1Open}
-        onOk={() => setModal1Open(false)}
-        onCancel={() => setModal1Open(false)}
-      >
-        <FormSale />
-      </Modal>
-      </div>
-      <div className="two medium">
-        <h2>Medium</h2>
-        <ul>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-        </ul>
-        <div className='value'><span>R$</span> 23,58 <span className='mont'>/mensal</span></div>
-        <button type="button"  onClick={() => setModal2Open(true)}> Selecionar plano</button>
-      </div>
-      <div className="two premium">
-        <h2>Premium <div className="crown" /></h2>
-        <ul>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-          <li><span><BsCheck2Circle /></span>10 dispositivos</li>
-        </ul>
-        <button type="button"> Fazer Orçamento</button>
-      </div>
-      <Modal
-        title="Preencha o Formulário abaixo"
-        centered
-        open={modal2Open}
-        onOk={() => setModal2Open(false)}
-        onCancel={() => setModal2Open(false)}
-      >
-        <FormSale />
-      </Modal>
-      </section>
+        <Plans />
     </div>
   );
 }

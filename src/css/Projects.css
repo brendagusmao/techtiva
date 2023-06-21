@@ -2,7 +2,7 @@
   width: 100%;
   /* background: linear-gradient(90.86deg, #17186A 20.7%, #171662 34.28%, #11124B 68.96%, #0F0F41 84.11%); */
   display: flex;
-  background-color: rgb(22, 22, 96);
+  background-color: #f0f0f0;
   /* background-image: url(../images/Desktop\ -\ 4.png); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,11 +18,11 @@
 
 .Projects h1 {
   font-size: 35px;
-  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.749));
+  /* filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.749)); */
   margin-bottom: 25px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.874);
+  color: rgba(15, 15, 15, 0.852);
   margin-top: 50px;
 }
 
@@ -30,7 +30,7 @@
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: rgba(15, 15, 15, 0.747);
   margin-bottom: 25px;
 }
 .ant-image-preview-operations {
@@ -39,7 +39,7 @@
 .ant-image-preview-root .ant-image-preview-wrap {
   background-color: #0e0e2ca6;
 }
-.bar {
+/* .bar {
   background-image: url(../images/Rectangle\ \(2\).png); 
   top: 0;
   width: 100%;
@@ -47,12 +47,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
-}
+} */
 .gridprojects {
 	display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   justify-content: start;
+  margin: 20px 0px 50px 0px;
 }
 
 .oioi {
@@ -68,8 +69,8 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  border: 5px solid rgb(48, 48, 194);
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.422));
+  border: 5px solid rgb(255, 255, 255);
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.208));
   aspect-ratio: attr(width) / attr(height); /* Mantém a proporção da imagem */
 }
 
@@ -87,6 +88,9 @@
   grid-row: 2 / span 2;
 }
 
+.item-6 {
+  margin-top: -261px;
+}
 .item-0 {
   margin-top: -130px;
 }

@@ -125,15 +125,61 @@
 }
 .maintwo {
     padding: 60px;
-    background-color: #39107a;
+    background: linear-gradient(90.86deg, #17186A 20.7%, #171662 34.28%, #11124B 68.96%, #0F0F41 84.11%);
+    /* background-color: rgb(22, 22, 96); */
+    filter: drop-shadow(5px 1px 1px rgba(0, 0, 0, 0.749));
+    border-top: 1px solid rgba(0, 0, 0, 0.749);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.749);
+    box-shadow: inset 1px 1px 4px rgb(0 0 0 / 33%);
     display: flex;
     width: 100%;
-    margin: 10px 0px;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
     align-content: center;
 }
 
+.maintwo h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  align-items: center;
+    justify-content: center;
+    margin: 0px 0px 40px 0px;
+  color: rgba(255, 255, 255, 0.941);
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.find {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.find h1 {
+  color: rgba(255, 255, 255, 0.941);
+  margin: 60px 0px 20px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.find button {
+  background-color: #44158e;
+    color: white;
+    outline: none;
+    border: 1px solid #43168a;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 16px;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.281));
+    font-weight: 700;
+    letter-spacing: 0.10em;
+}
+.sales {
+  display: flex;
+}
 .cardsales {
   width: 90%;
   margin: 50px 0px;
