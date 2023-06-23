@@ -1,12 +1,22 @@
 import { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useNavigate } from 'react-router-dom';
 import ToggleMenu from './toggleMenu';
 // import MyContext from '../context/MyContext';
 import '../../css/Header.css';
 
 function Nav() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const history = useNavigate();
 
+    const home = () => {
+      // history.push('/new-path'); // Atualiza a URL para a nova rota
+      history('/');
+    };
+    const about = () => {
+      // history.push('/new-path'); // Atualiza a URL para a nova rota
+      history('/sobre');
+    };
     useEffect(() => {
       const handleScroll = () => {
         if (window.scrollY > 100 && !isScrolled) {
@@ -44,9 +54,9 @@ function Nav() {
     <div className="logo"> <div className="ilogo" />techtiva</div>
       <ToggleMenu />
       <div className='navegation'> 
-        <Link onClick={scrollto}
+        <Link onClick={home}
             activeClass="active"
-            to="section1"
+            to="/"
             spy={true}
             smooth={true}
             offset={70}
@@ -54,14 +64,7 @@ function Nav() {
             duration={300} className="scrollto">
                 Home
         </Link>
-        <Link onClick={scrollto}
-            activeClass="active"
-            to="section1"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            data-section-id="about"
-            duration={500} className="scrollto">Sobre Nós</Link>
+        <Link onClick={about} className="scrollto">Sobre Nós</Link>
         <Link onClick={scrollto}
             activeClass="active"
             to="section1"
