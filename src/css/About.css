@@ -1,75 +1,147 @@
 .hello {
-    width: 100%;
-    height: 100%;
-    background-color: #0c0c32d8;
-    z-index: 999;
-    position: fixed;
-    display: flex;
-    margin-Top: 0px;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(4px);
+  width: 100%;
+  height: 100%;
+  background-color: #0c0c32d8;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
 }
 .ant-spin {
-    color: white;
+  color: white;
 }
 .imageabout {
-    width: 50%;
-    right: 0px;
-    position: absolute;
-    top: 60px;
+  width: 50%;
+  right: 0px;
+  position: absolute;
+  top: 60px;
 }
 .header_about {
-    width: 100%;
-    background-color:rgb(245 245 245);
+  width: 100%;
+  background-color: rgb(245 245 245);
 }
 .header_about img {
-    width: 100%;
+  width: 100%;
 }
 
 .title_principal {
-    position: absolute;
-    top: 200px;
-    width: 40%;
-    left: 50px;
+  position: absolute;
+  top: 200px;
+  width: 40%;
+  left: 50px;
 }
 .title_principal h1 {
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    color: #1d0641;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1d0641;
 }
 .imageabout img {
-    width: 100%;
+  width: 100%;
 }
 .about {
-    display: flex;
-    background-color: #f5f5f5;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-    margin: 0px;
-    width: 100%;
-    padding: 10px;
-    height: auto;
+  display: flex;
+  background-color: #f5f5f5;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 200px 0px 0px 50px;
+  width: 90%;
+  padding: 10px;
+  height: auto;
+}
+.down2 {
+    color: rgba(0, 0, 0, 0.763)!important;
+    top: 500px!important;
+    left: 50%!important;
+    width: 40%!important;
 }
 
 .about h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: rgba(15, 15, 15, 0.852);
-        font-size: 24px;
-        margin: 40px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: rgba(15, 15, 15, 0.852);
+  font-size: 24px;
+  margin: 40px 0px 20px 0px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
 }
+
+.iconsabout {
+   height: 0.80em;
+   margin-right: 5px;
+    color: #1e0d77;
+}
+
 .about .description {
-    width: 50%;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    margin: 20px 0px;
-    display: flex;
-    flex-direction: column;
+  width: 47%;
+  text-align: justify;
+  font-size: 15px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  color: #656464;
+}
+.two2 {
+  margin-top: 130px !important;
+  margin-left: 0px !important;
+}
+
+.card_mission {
+  background: #111147;
+  padding: 10px;
+  width: 350px;
+  margin-left:20px;
+  margin-top:20px;
+  height: 250px;
+  color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.354));
+}
+
+.titulo {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: rgba(244, 244, 244, 0.852);
+  font-size: 24px;
+  margin: 30px 0px;
+}
+.titulo img {
+  width: 26px;
+  margin-right: 10px;
+}
+.about_desc {
+  text-align: justify;
+  margin: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(244, 244, 244, 0.852);
+}
+.mission {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr); /* Exibir três cartões por linha */
+  row-gap: 60px;
+  background-color: #f5f5f5;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 50px 0px 0px 0px;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  justify-items: center;
+  background: linear-gradient(318deg, #39107a 7.48%, #311683 40.69%, #131353 76.77%);
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.719));
 }

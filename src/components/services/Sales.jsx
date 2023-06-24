@@ -4,10 +4,10 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Icon from '../../images/web-design.png';
-import Suport from '../../images/suport.png';
-import Virtual from '../../images/virtual.png';
-import Idea from '../../images/idea.png';
+import Icon from '../../images/icons png/web-design.png';
+import Suport from '../../images/icons png/suport.png';
+import Virtual from '../../images/icons png/virtual.png';
+import Idea from '../../images/icons png/idea.png';
 
 function Sales() {
     return (
