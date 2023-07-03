@@ -48,10 +48,21 @@ function Nav() {
         target.classList.add('Selected');
         scrollToSection(target.dataset.sectionId);
     }
-
+      const [showElement, setShowElement] = useState(false);
+    
+      const handleClick = () => {
+        setShowElement(!showElement);
+      };
   return  ( 
     <nav className={isScrolled ? 'container-fluid navcolor' : 'container-fluid'}>
-    <div className="logo"> <div className="ilogo" />techtiva</div>
+    <div className="logo">
+    <button onClick={handleClick}>click</button>
+    {showElement ? (
+        <div className="ilogo" />
+      ) : (
+        <div className="ilogo2" />
+      )}
+      techtiva</div>
       <ToggleMenu />
       <div className='navegation'> 
         <Link onClick={home}
