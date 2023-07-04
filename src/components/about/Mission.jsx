@@ -1,11 +1,13 @@
-import { IoMdListBox } from 'react-icons/io';
-import { FaUserAlt } from 'react-icons/fa';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 import Quality from '../../images/icons svg/quality-svgrepo-com.svg';
 import Creative from '../../images/icons svg/braindstorming-creativity-mind-svgrepo-com.svg';
 import Compromise from '../../images/icons svg/handshake-medium-light-skin-tone-svgrepo-com.svg';
 import Client from '../../images/icons svg/call-center-telephone-svgrepo-com.svg';
 import Innovation from '../../images/icons svg/rocket-innovation-space-svgrepo-com.svg';
 import Collaboration from '../../images/icons svg/collaboration-svgrepo-com.svg';
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function Mission() {
   const missions = [
@@ -48,13 +50,22 @@ export default function Mission() {
   ];
 
   return (
+    <>
     <div className="mission">
+      <div> <h1>Nossos valores</h1></div>
+      <div className="gridmission">
       {missions.map((mission, index) => (
         <div key={index} className="card_mission">
           <section className='titulo'><img src={mission.icon} /> {mission.title}</section>
           <section className="about_desc">{mission.text}</section>
         </div>
       ))}
+      </div>
     </div>
+    <div className="frasemission">
+      <h1>Na [Nome da Empresa], nossa paixão é transformar a visão dos nossos clientes em realidade. Trabalhamos com empreendedores ambiciosos que desejam causar impacto no mercado digital. Nosso foco está em desenvolver sites personalizados, projetados para envolver e conquistar o público-alvo. Acreditamos que o sucesso do pequeno negócio é nosso sucesso, e estamos comprometidos em fornecer soluções digitais excepcionais que os ajudem a prosperar.
+      </h1>
+    </div>
+    </>
   );
 }
