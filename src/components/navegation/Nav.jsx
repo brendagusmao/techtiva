@@ -13,6 +13,10 @@ function Nav() {
       // history.push('/new-path'); // Atualiza a URL para a nova rota
       history('/');
     };
+    const contact = () => {
+      // history.push('/new-path'); // Atualiza a URL para a nova rota
+      history('/contact');
+    };
     const about = () => {
       // history.push('/new-path'); // Atualiza a URL para a nova rota
       history('/sobre');
@@ -92,9 +96,9 @@ function Nav() {
             offset={70}
             data-section-id="projects"
             duration={500} className="scrollto">Projetos</Link>
-        <Link onClick={scrollto}
+        <Link onClick={contact}
             activeClass="active"
-            to="section1"
+            to="contact"
             spy={true}
             smooth={true}
             offset={-70}
