@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react';
-import HeaderAbout from '../components/about/HeaderAbout2';
 import Description from '../components/about/Description';
 import Mission from '../components/about/Mission';
 import '../css/About.css';
@@ -16,7 +15,6 @@ function About() {
     return  (
       <>
         <Nav2 />
-        <HeaderAbout />
         <Description />
         <Mission />
       </>

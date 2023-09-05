@@ -1,10 +1,10 @@
 header {
   display: flex;
-  background-image: url(../images/Desktop\ -\ 1\ \(2\).png);
+  /* background-image: url(../images/Desktop\-\1\\(2\)); */
   background-size: cover;
-  background-color: #fbfcfc ;
+  background: linear-gradient(180deg, #161565 0%, #380e62 100%);
   background-repeat: no-repeat;
-  height: 40rem;
+  height: 35rem;
   top: 0px;
   align-items: center;
   justify-content: space-between;
@@ -12,27 +12,25 @@ header {
   flex-wrap: nowrap;
   flex-direction: row;
   overflow-x: hidden;
-  }
-  
-.dark header {
-    background-color: black;
-  }
-  /* https://cutewallpaper.org/27/background-wallpaper-blue-green-purple/214976262.jpg 
-  https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-117928.jpg
-  */
-
-.image {
-  background-image: url(../images/imagesidebar.png);
-  width: 500px;
-  height: 500px;
-  background-size: cover;
-  margin: 30px 100px 0px 0px;
+  overflow: hidden !important;
 }
 
+.imagecomponent {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0%;
+  margin-top: 10%;
+  width: 850px;
+  height: 575px;
+  opacity: 0.9;
+  background: url(../images/imageheader.png) no-repeat;
+  background-size: cover;
+  mix-blend-mode: lighten;
+}
 nav {
   display: flex;
   width: 100%;
-  height: 55px;
+  height: 68px;
   padding: 5px;
   position: fixed;
   margin-top: 0px;
@@ -44,54 +42,45 @@ nav {
 }
 
 .navcolor {
-  background: linear-gradient(220.94deg, #39107A 7.48%, #311683 40.69%, #131353 76.77%);
+  background-color: #1a1364;
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.053));
 }
 
 .logo {
-  font-family: 'Wix Madefor Display', sans-serif;
+  color: #fff;
+  font-family: Wix Madefor Display;
   font-size: 26px;
-  color: white;
-  margin-top: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   display: inherit;
   margin-left: 60px;
   cursor: pointer;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.749));
 }
 
-.logo .ilogo {
-  background-image: url(../images/logo\ 5.png);
-  background-size: contain;
-  width: 40px;
-  height: 35px;
-  margin-right: 10px;
-  margin-top: 0px;
-  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.05));
-}
-.logo .ilogo2 {
-  background-image: url(../images/logo\ 6.png);
-  background-size: contain;
-  width: 40px;
-  height: 35px;
-  margin-right: 10px;
-  margin-top: 0px;
-  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.05));
+.logo img {
+  width: 35px;
+  height: 42px;
+  mix-blend-mode: color-dodge;
+  margin-top: -5px;
 }
 
 .navegation {
   display: inherit;
-  width: 100%;
-  justify-content: flex-end;
-  margin-right: 140px;
+  width: 70%;
+  justify-content: center;
 }
 
 .navegation a {
-  margin: 5px;
+  margin: 2px;
   padding: 10px;
-  font-family: 'DM Sans', sans-serif;
+  color: #e8e8e8;
+  font-family: DM Sans;
   font-size: 15px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.808);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   text-decoration: none;
   outline: none;
   transition: all 0.45s;
@@ -101,17 +90,50 @@ nav {
 .navegation a:active {
   color: white;
   background-color: #0e0e416b;
-  border:1px solid var(--cor-principal);
+  border: 1px solid var(--cor-principal);
   border-radius: 5px;
   box-shadow: 0px 0px 10px var(--cor-principal);
 }
-.navegation a:hover { 
-  /* border-radius: 5px 5px 0px 0px;
-  background-color: #0e0e418d; */
+.navegation a:hover {
   color: white;
-  /* box-shadow: inset 0px -3px 0px var(--cor-principal);
-  transition: transform 0.45s ease-in-out;  */
-} 
+}
+
+.boxlogin {
+  display: flex;
+  justify-content: flex-end;
+}
+.boxlogin button {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.cadastre {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.login {
+  width: 100px;
+  height: auto;
+  margin-right: 50px !important;
+  border-radius: 5px;
+  border: 1px solid #742bdb;
+  background: #742bdb;
+  padding: 10px;
+  text-align: center;
+}
 
 @keyframes line {
   0% {
@@ -119,47 +141,131 @@ nav {
   }
 }
 
+.sidebar {
+  width: 60%;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 5%;
+  flex-direction: column;
+}
+.sidebar h1 {
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 550px;
+}
 .Selected {
   background-color: #0e0e416b;
-  border:1px solid var(--cor-principal);
+  border: 1px solid var(--cor-principal);
   border-radius: 5px;
   box-shadow: 0px 0px 10px var(--cor-principal);
-  color: white;
-}
-.sidec {
   color: white;
 }
 
 .desc {
   display: flex;
-  width: 550px;
+  width: 600px;
   height: auto;
   padding: 10px;
-  color: rgba(255, 255, 255, 0.874);
-  margin-left: 50px;
-  align-items: center;
-  justify-content: flex-start;
-  align-content: center;
-  font-size: 16px;
-  flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  color: white;
+  margin-left: -10px;
+  font-size: 20px;
   font-weight: 500;
+  font-style: normal;
 }
 
 .desc h1 {
-  font-family: 'Wix Madefor Display', sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 40px;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.749));
   margin-left: 10px;
 }
 
-.description {
-  margin: 40px 0px 40px 0px;
-  text-align: justify;
+.promotion {
+  color: #fff;
+  text-align: left;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 2%;
 }
 
+.promotion span {
+  color: #97faff;
+}
+
+.sale h3 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.limited {
+  display: flex;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.sale {
+  margin-top: 10px;
+  display: flex;
+  color: #fff;
+  font-size: 40px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-items: center;
+}
+
+.promotion button {
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  padding: 15px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #59209d;
+  background: rgba(255, 255, 255, 0.06);
+  outline: none;
+  text-align: center;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.promotion button i {
+  display: flex;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.bar svg {
+  width: 100.25%;
+  fill: #FCFCFC;
+}
 .desc button {
-  background: linear-gradient(142deg, rgba(226, 27, 252, 0.833) 39%, rgba(161,74,245,1) 100%);
+  background: linear-gradient(
+    142deg,
+    rgba(226, 27, 252, 0.833) 39%,
+    rgba(161, 74, 245, 1) 100%
+  );
   padding: 15px;
   margin: 5px;
   outline: none;
@@ -167,7 +273,7 @@ nav {
   color: white;
   border-radius: 10px;
   font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.334));
@@ -202,48 +308,91 @@ nav {
 
 .down {
   font-size: 30px;
-  animation: down 1.0s;
+  animation: down 1s;
   animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-  0% { transform: translate(0, 0); }
-  10% { transform: translate(-10px, 0); }
-  20% { transform: translate(10px, 0); }
-  30% { transform: translate(-10px, 0); }
-  40% { transform: translate(10px, 0); }
-  50% { transform: translate(-10px, 0); }
-  60% { transform: translate(10px, 0); }
-  70% { transform: translate(-10px, 0); }
-  80% { transform: translate(10px, 0); }
-  90% { transform: translate(-10px, 0); }
-  100% { transform: translate(0, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-10px, 0);
+  }
+  20% {
+    transform: translate(10px, 0);
+  }
+  30% {
+    transform: translate(-10px, 0);
+  }
+  40% {
+    transform: translate(10px, 0);
+  }
+  50% {
+    transform: translate(-10px, 0);
+  }
+  60% {
+    transform: translate(10px, 0);
+  }
+  70% {
+    transform: translate(-10px, 0);
+  }
+  80% {
+    transform: translate(10px, 0);
+  }
+  90% {
+    transform: translate(-10px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes down {
-  0% { opacity: 0.20; }
-  10% { opacity: 0.30; }
-  20% { opacity: 0.40;}
-  30% { opacity: 0.50;}
-  40% { opacity: 0.60;}
-  50% { opacity: 0.70; }
-  60% { opacity: 0.80;}
-  70% { opacity: 0.90;}
-  80% { opacity: 1;}
-  90% { opacity: 0.50; }
-  100% { opacity: 0.30; }
+  0% {
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
 
 .buttontoggle {
   margin-top: 30px;
   z-index: 9;
-  font-family: 'Braah One', sans-serif;
+  font-family: "Braah One", sans-serif;
   font-size: 26px;
   color: white;
   display: none;
   margin: 0px 30px 0px 0px;
 }
-
 
 .toggle {
   background-color: wheat;
@@ -269,10 +418,10 @@ nav {
   position: absolute;
   backdrop-filter: blur(4px);
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .toggle li {
@@ -293,7 +442,7 @@ nav {
 .toggle li a {
   text-decoration: none;
   color: white;
-  font-family: 'Wix Madefor Display', sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 18px;
 }
 
@@ -341,18 +490,18 @@ nav {
     z-index: 1;
     margin-top: 100px;
   }
-  
+
   .desc h1 {
     font-size: 35px;
     filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.749));
   }
-  
+
   .description {
     width: 300px;
     margin: 50px 50px 0px 0px;
     text-align: justify;
   }
-  
+
   .desc button {
     margin: 35px 0px 0px 8px;
   }
