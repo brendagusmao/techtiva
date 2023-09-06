@@ -21,8 +21,8 @@ function Plans() {
           <li><span><BsCheck2Circle /></span>10 dispositivos</li>
           <li><span><BsCheck2Circle /></span>10 dispositivos</li>
         </ul>
-        <div className='value'><span>R$</span> 23,58 <span className='mont'>/mensal</span></div>
-        <button type="button" onClick={() => setModal1Open(true)}> Selecionar plano</button>
+        <div className='value'><span>R$</span>23,58<span className='mont'>/ mensais</span></div>
+        <button type="button" onClick={() => setModal1Open(true)} className='colorbutton'> Adicionar ao carrinho</button>
         <Modal
         title="Preencha o Formulário abaixo"
         centered
@@ -34,6 +34,13 @@ function Plans() {
       </Modal>
       </div>
       <div className="two medium">
+        <div className='popular'>Mais pupular
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="26" viewBox="0 0 42 26" fill="none">
+            <path d="M21 26L0.215393 0.5L41.7846 0.5L21 26Z" fill="#C4FCFF"/>
+          </svg>
+        </span>
+      </div>
         <h2>Medium</h2>
         <ul>
           <li><span><BsCheck2Circle /></span>10 dispositivos</li>
@@ -42,8 +49,10 @@ function Plans() {
           <li><span><BsCheck2Circle /></span>10 dispositivos</li>
           <li><span><BsCheck2Circle /></span>10 dispositivos</li>
         </ul>
-        <div className='value'><span>R$</span> 23,58 <span className='mont'>/mensal</span></div>
-        <button type="button"  onClick={() => setModal2Open(true)}> Selecionar plano</button>
+        <div className='value'>
+          <p>De R$ <s>89,90</s> por</p>
+          <span>R$</span>23,58<span className='mont'>/ mensais</span></div>
+        <button type="button"  onClick={() => setModal2Open(true)} className='mediumbutton'> Adicionar ao carrinho</button>
       </div>
       <div className="two premium">
         <h2>Premium <div className="crown" /></h2>
@@ -54,8 +63,8 @@ function Plans() {
           <li><span><BsCheck2Circle /></span>10 dispositivos</li>
           <li><span><BsCheck2Circle /></span>10 dispositivos</li>
         </ul>
-        <div className='value'><span>R$</span> 23,58 <span className='mont'>/mensal</span></div>
-        <button type="button" onClick={() => setModal1Open(true)}> Selecionar plano</button>
+        <div className='value'><span>R$</span>23,58<span className='mont'>/ mensais</span></div>
+        <button type="button" onClick={() => setModal1Open(true)} className='colorbutton'> Adicionar ao carrinho</button>
         <Modal
         title="Preencha o Formulário abaixo"
         centered
@@ -77,7 +86,7 @@ function Plans() {
       </Modal>
       </span>
       <span className='find'>
-        <h1>Ainda não é o que procura? Clique abaixo e faça contato conosco.</h1>
+        <h1>Ainda não é o que procura?</h1>
         <button> contratar outros serviços</button>
       </span>
       </section>

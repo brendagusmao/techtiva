@@ -27,6 +27,11 @@ function Services() {
       <section className={className ? 'main' : 'main visible'} data-anime="top">
         <h1 className="titlee">Construa um site de sucesso que reflete a excelência da sua empresa! Escolha um dos nossos planos e destaque-se na web.
 </h1>
+      <Sales />
+        <section className='cardmodelsplans'>
+        <button> e muito mais modelos <i><BsFillArrowRightCircleFill /></i></button>
+     </section>
+     <Plans />
       <div className="boxinf">
         <section><img src="https://xceptive.com/wp-content/uploads/2022/10/Frame.svg" alt="image" /></section>
         <section className='infdesc'><h1>Um site que conte sua história de maneira cativante.</h1>
@@ -47,11 +52,6 @@ function Services() {
 </section>
       </div>
       </section>
-        <Sales />
-        <section className='cardmodelsplans'>
-     <button> e muito mais modelos <i><BsFillArrowRightCircleFill /></i></button>
-     </section>
-        <Plans />
         <section className='maintree'>
         <section className='feat width' data-anime="left">
         <img src={Web} alt="" width={'80%'} loading="eager"/>
