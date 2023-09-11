@@ -4,7 +4,6 @@ import MyContext from '../context/MyContext';
 import Sales from '../components/services/Sales';
 import { debounce, animeScroll } from '../components/scrollUtils';
 import '../css/Services.css';
-import Web from '../images/Design team-amico (1).svg';
 import Plans from '../components/services/Plans';
 
 function Services() {
@@ -31,7 +30,12 @@ function Services() {
         <section className='cardmodelsplans'>
         <button> e muito mais modelos <i><BsFillArrowRightCircleFill /></i></button>
      </section>
-     <Plans />
+     {/* <Plans id="plans" /> */}
+     {/* <div className="barplans">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="105" viewBox="0 0 1440 105" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 38.2279L120 56.2564C240 74.2849 480 110.342 720 104.332C960 98.3229 1200 50.2469 1320 26.2089L1440 2.17092V-106H1320C1200 -106 960 -106 720 -106C480 -106 240 -106 120 -106H0V38.2279Z" fill="#340D5F"/>
+</svg>
+      </div>
       <div className="boxinf">
         <section><img src="https://xceptive.com/wp-content/uploads/2022/10/Frame.svg" alt="image" /></section>
         <section className='infdesc'><h1>Um site que conte sua história de maneira cativante.</h1>
@@ -50,20 +54,7 @@ function Services() {
 <p>E o melhor de tudo, nossa abordagem é eficaz e acessível. Comece hoje mesmo a desenvolver sua estratégia e observe um aumento notável nas métricas de conversão e vendas!"
 </p>
 </section>
-      </div>
-      </section>
-        <section className='maintree'>
-        <section className='feat width' data-anime="left">
-        <img src={Web} alt="" width={'80%'} loading="eager"/>
-        </section>
-        <div className='feat' data-anime="top">
-        <h1>Construa uma presença online poderosa e cativante</h1>
-        <desc>A primeira impressão importa, especialmente no mundo digital. Nossos templates profissionais e designs modernos irão cativar seus visitantes e transformá-los em clientes fiéis. Com foco em usabilidade e experiência do usuário, nossas páginas garantem uma navegação intuitiva e uma apresentação visualmente impressionante.
-        </desc>
-        <h1>A sua visão, o seu site</h1>
-        <desc>Entendemos que cada negócio é único, e é por isso que oferecemos opções para a criação de sites personalizados, de acordo com as suas preferências e objetivos. Com nossa equipe de designers talentosos, traduzimos a sua visão em um site de tirar o fôlego, que transmitirá a personalidade e a proposta de valor exclusiva da sua empresa.
-        </desc>
-        </div>
+      </div> */}
       </section>
     </div>
   );

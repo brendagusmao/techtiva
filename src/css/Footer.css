@@ -1,0 +1,77 @@
+footer {
+    height: 242px;
+    border-top: 1px solid #000;
+    background: var(--outro, #340D5F);
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar2 {
+    width: auto;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Wix Madefor Display;
+    font-size: 36px;
+    font-style: normal;
+    line-height: normal;
+    margin: 30px 40px;
+}
+.sidebar2 title {
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+}
+.sidebar2 img {
+    width: 35px;
+    height: 42px;
+    mix-blend-mode: hard-light;
+}
+.desc2 {
+    width: 438px;
+    height: 118px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.navfooter {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-right: 100px;
+}
+.navfooter section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 60px;
+}
+
+.navfooter section h1 {
+    color: #FFF;
+font-family: DM Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.navfooter section p {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.navfooter a {
+    color: #FFF;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+margin-top: 10px;
+}

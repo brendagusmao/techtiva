@@ -67,7 +67,7 @@ function Nav() {
       <div className='navegation'> 
         <Link onClick={home}
             activeClass="active"
-            to="/"
+            to="home"
             spy={true}
             smooth={true}
             offset={70}
@@ -78,11 +78,11 @@ function Nav() {
         <Link onClick={about} className="scrollto">Sobre Nós</Link>
         <Link onClick={scrollto}
             activeClass="active"
-            to="section1"
+            to="plans"
             spy={true}
             smooth={true}
             offset={70}
-            data-section-id="services"
+            data-section-id="plans"
             duration={500} className="scrollto">Serviços</Link>
         <Link onClick={scrollto}
             activeClass="active"
