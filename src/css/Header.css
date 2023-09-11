@@ -140,6 +140,36 @@ nav {
   text-align: center;
 }
 
+.boxlogintoggle {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 30px 0px;
+}
+.boxlogintoggle button {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.boxlogintoggle .entrarbutton {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #742bdb;
+  background: #742bdb;
+  padding: 10px;
+  text-align: center;
+}
 @keyframes line {
   0% {
     background-position-x: 390px;
@@ -269,8 +299,9 @@ nav {
   width: 100%;
   margin-top: -155px;
 }
+
 .bar svg {
-  width: 100.25%;
+  width: 100vw;
   fill: #FCFCFC;
 }
 .desc button {
@@ -418,7 +449,7 @@ nav {
 }
 
 .toggle ul {
-  background-color: #111130bd;
+  background-color: #141152e3;
   margin-top: 15px;
   margin-left: -5px;
   gap: 28px;
@@ -426,13 +457,14 @@ nav {
   font-weight: 600;
   align-items: center;
   list-style: none;
-  height: 600px;
+  height: 100vh;
   width: 100%;
   position: absolute;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -475,11 +507,32 @@ nav {
   width: auto;
   z-index: 9;
 }
+.navcolor .toggle ul {
+  background-color: #290b4fe3;
+}
 @media screen and (max-width: 414px) {
   header {
     flex-direction: column;
-    height: 700px;
+    height: auto;
     overflow-y: hidden;
+  }
+.boxlogin {
+  display: none;
+}
+  .sidebar {
+    width: 90vw;
+    margin-top: 25%;
+    margin-left: 10%;
+  }
+  .sidebar h1 {
+    width: 100%;
+  }
+  .imagecomponent {
+    width: 100%;
+    height: 410px;
+  }
+  .promotion {
+    margin-bottom: 80px;
   }
   .navegation {
     display: none;
@@ -503,7 +556,9 @@ nav {
     z-index: 1;
     margin-top: 100px;
   }
-
+  .desc {
+    margin-top: 30px;
+  }
   .desc h1 {
     font-size: 35px;
     filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.749));
@@ -525,5 +580,8 @@ nav {
     margin: 440px 0px 0px 0px;
     position: absolute;
     opacity: 0.5;
+  }
+  .bar {
+    margin-top: -120px;
   }
 }

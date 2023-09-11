@@ -263,7 +263,15 @@
 .ant-select .ant-select-arrow {
   top: 30%;
 }
-@media screen and (max-width: 717px) {
+
+@media screen and (max-width: 414px) {
+  .gridprojects {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media screen and (min-width: 417px) {
   .gridprojects {
     grid-gap: 0px;
     align-content: center;

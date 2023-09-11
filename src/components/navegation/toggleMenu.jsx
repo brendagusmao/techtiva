@@ -32,6 +32,10 @@ function ToggleMenu() {
         </div>
           <div className="toggle">
             <ul>
+              <div className='boxlogintoggle'>
+                <button className='entrarbutton'> entrar</button>
+                <button className='entrarbutton'> cadastre-se</button>
+              </div>
               <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#home">home</a></li>
               <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#about">about</a></li>
               <li><RiPagesFill className="icontoggle" /><a onClick={toggleMenu} href="#projects">projects</a></li>

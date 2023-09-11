@@ -333,9 +333,9 @@ width: 500px;
   outline-offset: -15px;
   border-radius: 10px; */
 }
-.premium {
+/* .premium {
   background: linear-gradient(152.02deg, #0b082dc5 -8.09%, #0c0c32d5 28.43%, #0e0f47 77.32%);
-}
+} */
 .two h2 {
   margin: 10px auto;
   font-size: 25px;
@@ -575,6 +575,17 @@ position: absolute;
     opacity: 1;
   }
 }
+@media screen and (max-width: 414px) {
+  .Services {
+    height: auto;
+  }
+  .cardsales {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 717px) {
   /* .Services {
     overflow: hidden;
@@ -586,18 +597,27 @@ position: absolute;
   .cardsales {
     margin: 10px;
   }
+  .titlee {
+    font-size: 20px;
+  }
   .card {
-    width: 130px;
+    width: 90%;
+    margin: 20px 10px;
+    height: 200px;
   }
   .maintwo {
     display: flex;
     width: 100%;
-    margin: 30px 0px 30px 15px;
+    margin: 30px 0px;
     flex-direction: column;
   }
+  .maintwo h1 {
+    text-align: center;
+  }
   .two {
-    width: auto;
+    width: 360px;
     margin-bottom: 30px;
+    margin-left: 30px;
   }
   .show {
     -webkit-animation: slide-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
@@ -608,7 +628,49 @@ position: absolute;
     width: 90%;
     margin: 25px 20px 30px 20px;
   }
-  .Services {
-    height: 1726px;
+  .sales {
+    flex-direction: column;
+    width: 100%;
+  }
+  .medium {
+    margin-top: 50px;
+  }
+  .popular {
+    margin: -60px 70px;
+  }
+  .barplans {
+    width: 100%;
+    margin-top: -42px;
+  }
+  .boxinf {
+    flex-direction: column;
+    width: 90%;
+  }
+  .infdesc {
+    width: 90%;
+  }
+  .boxinf img {
+    width: 65%;
+    margin-left: 15%;
+  }
+  .maintree {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .feat {
+      width: 100%;
+  }
+  .width {
+      width: 70%;
+  }
+  .maincard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-avaliacao {
+    width: 90%;
   }
 }
