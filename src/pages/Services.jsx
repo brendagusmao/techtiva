@@ -11,7 +11,7 @@ function Services() {
   useEffect(() => {
     const handleScroll = debounce(() => {
       animeScroll();
-    }, 100);
+    }, 50);
 
     animeScroll();
 

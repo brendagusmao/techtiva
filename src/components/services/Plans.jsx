@@ -10,9 +10,9 @@ function Plans() {
 
     return  ( 
       <>
-        <section className='maintwo' data-anime="top" id="plans" /* className={className ? 'maintwo show' : 'maintwo'} */>
+        <section className='maintwo' id="plans" /* className={className ? 'maintwo show' : 'maintwo'} */>
         <h1> Planos flexíveis para todas as necessidades </h1>
-        <span className='sales'>
+        <span className='sales' data-anime="top">
       <div className="two">
         <h2>Basic</h2>
         <ul>
