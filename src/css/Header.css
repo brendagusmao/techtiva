@@ -4,7 +4,7 @@ header {
   background-size: cover;
   background: linear-gradient(180deg, #161565 0%, #380e62 100%);
   background-repeat: no-repeat;
-  height: 38rem;
+  height: 100vh;
   top: 0px;
   align-items: center;
   justify-content: space-between;
@@ -15,6 +15,31 @@ header {
   overflow: hidden !important;
 }
 
+.fixheader {
+  height: 90vh;
+}
+.fiximage {
+  width: 50%;
+  height: 80vh;
+  top: 70px;
+  position: absolute;
+}
+.fiximage img {
+  width: 100%;
+  border-radius: 0px 0px 15px 0px;
+}
+
+.fixtitle {
+  color: #fff;
+  width: 513px;
+  text-align: center;
+  font-family: Wix Madefor Display;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 700px;
+  line-height: normal;
+}
 .imagecomponent {
   display: flex;
   justify-content: flex-end;
@@ -142,10 +167,10 @@ nav {
 
 .boxlogintoggle {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: 30px 0px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 30px 0px;
 }
 .boxlogintoggle button {
   color: #fff;
@@ -262,8 +287,10 @@ nav {
   line-height: normal;
   align-items: center;
 }
-
-.promotion button {
+.fixtitle button {
+  margin-left: 15%;
+}
+.promotion button, .fixtitle button {
   position: absolute;
   width: auto;
   height: auto;
@@ -277,7 +304,7 @@ nav {
   outline: none;
   cursor: pointer;
 }
-.promotion button a {
+.promotion button a, .fixtitle button a {
   display: flex;
   text-align: center;
   color: #fff;
@@ -288,7 +315,7 @@ nav {
   line-height: normal;
   text-decoration: none;
 }
-.promotion button i {
+.promotion button i, .fixtitle button i {
   display: flex;
   margin-left: 20px;
   font-size: 20px;
@@ -302,7 +329,7 @@ nav {
 
 .bar svg {
   width: 100vw;
-  fill: #FCFCFC;
+  fill: #fcfcfc;
 }
 .desc button {
   background: linear-gradient(
@@ -516,9 +543,9 @@ nav {
     height: auto;
     overflow-y: hidden;
   }
-.boxlogin {
-  display: none;
-}
+  .boxlogin {
+    display: none;
+  }
   .sidebar {
     width: 90vw;
     margin-top: 25%;

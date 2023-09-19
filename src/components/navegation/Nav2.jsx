@@ -3,6 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { useNavigate } from 'react-router-dom';
 import ToggleMenu from './toggleMenu';
 // import MyContext from '../context/MyContext';
+import ilogo from '../../images/icons svg/image 3.svg';
 import '../../css/Header.css';
 
 function Nav2() {
@@ -68,12 +69,7 @@ function Nav2() {
   return  ( 
     <nav className={isScrolled ? 'container-fluid navcolor' : 'container-fluid'}>
     <div className="logo">
-    <button onClick={handleClick}>click</button>
-    {showElement ? (
-        <div className="ilogo" />
-      ) : (
-        <div className="ilogo2" />
-      )}
+    <img src={ilogo} alt="Techtiva Logo" />
       techtiva</div>
       <ToggleMenu />
       <div className='navegation'> 

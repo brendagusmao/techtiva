@@ -1,71 +1,57 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
-import Quality from '../../images/icons svg/quality-svgrepo-com.svg';
-import Creative from '../../images/icons svg/braindstorming-creativity-mind-svgrepo-com.svg';
-import Compromise from '../../images/icons svg/handshake-medium-light-skin-tone-svgrepo-com.svg';
-import Client from '../../images/icons svg/call-center-telephone-svgrepo-com.svg';
-import Innovation from '../../images/icons svg/rocket-innovation-space-svgrepo-com.svg';
-import Collaboration from '../../images/icons svg/collaboration-svgrepo-com.svg';
-import "swiper/css";
-import "swiper/css/pagination";
+import React, { useState } from 'react';
+import { FiPlus, FiMinus} from 'react-icons/fi';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
+import { BiRightArrowAlt } from 'react-icons/bi';
 
 export default function Mission() {
-  const missions = [
-    {
-      text:
-        'Buscamos a excelência em tudo o que fazemos, desde a criação de templates e designs até a implementação de soluções tecnológicas personalizadas. Nosso compromisso com a qualidade garante a satisfação e o sucesso de nossos clientes.',
-      icon: Quality,
-      title: 'Qualidade',
-    },
-    {
-      text:
-        'Abraçamos a criatividade em todas as etapas do processo, desde a concepção de um design único até a resolução de desafios complexos. Nossa abordagem criativa nos permite oferecer soluções inovadoras e experiências digitais memoráveis.',
-      icon: Creative,
-      title: 'Criatividade',
-    },
-    {
-      text:
-        'Estamos comprometidos com o sucesso de nossos clientes. Trabalhamos em estreita colaboração com eles, entendendo suas metas e necessidades, e nos esforçamos para superar suas expectativas em todos os projetos.',
-      icon: Compromise,
-      title: 'Comprometimento',
-    },
-    {
-        text:
-          'Valorizamos a satisfação de nossos clientes acima de tudo. Nosso foco no atendimento ao cliente é fundamental para construir relacionamentos duradouros, baseados na confiança, na transparência e no respeito mútuo.',
-        icon: Client,
-        title: 'Atendimento ao Cliente',
-    },
-    {
-        text:
-          'Estamos constantemente atualizados com as últimas tendências e tecnologias digitais. Nossa paixão pela inovação nos impulsiona a explorar novas possibilidades e fornecer soluções que ajudem nossos clientes a se destacarem no mercado.',
-        icon: Innovation,
-        title: 'Inovação',
-    },
-    {
-        text:
-          'Acreditamos na importância da colaboração e parceria. Trabalhamos lado a lado com nossos clientes, ouvindo suas ideias, fornecendo orientação especializada e trabalhando juntos para alcançar os melhores resultados.',
-        icon: Collaboration,
-        title: 'Colaboração',
-    },
-  ];
+  const [frases, setFrases] = useState([
+    { frase: ' O que a sua empresa oferece?', texto: 'Oferecemos uma ampla gama de serviços de desenvolvimento web e design, incluindo a criação de sites personalizados em diversas linguagens, como React, WordPress, PHP e muito mais. Além disso, fornecemos soluções tecnológicas adicionais, como hospedagem, manutenção, otimização de desempenho e muito mais.', expandir: false },
+    { frase: 'Frase 2', texto: 'Texto da Frase 2', expandir: false },
+    { frase: 'Frase 3', texto: 'Texto da Frase 3', expandir: false },
+    { frase: 'Frase 4', texto: 'Texto da Frase 4', expandir: false },
+    { frase: 'Frase 5', texto: 'Texto da Frase 5', expandir: false },
+    { frase: 'Frase 6', texto: 'Texto da Frase 6', expandir: false },
+  ]);
+
+  const toggleExpansao = (index) => {
+    const novasFrases = [...frases];
+    novasFrases[index].expandir = !novasFrases[index].expandir;
+    setFrases(novasFrases);
+  };
 
   return (
     <>
-    <div className="mission">
-      <div> <h1>Nossos valores</h1></div>
-      <div className="gridmission">
-      {missions.map((mission, index) => (
-        <div key={index} className="card_mission">
-          <section className='titulo'><img src={mission.icon} /> {mission.title}</section>
-          <section className="about_desc">{mission.text}</section>
+      <div className='faq'>
+        <span className="frasetitle">Perguntas frequentes sobre os nossos serviços</span>
+        <div className="boxfaq">
+        <section>
+          {frases.slice(0, 3).map((frase, index) => (
+            <span key={index} onClick={() => toggleExpansao(index)}>
+              <h1>{frase.expandir ? <i><FiMinus /></i> : <i> <FiPlus /> </i>} {frase.frase} {/* {index + 1} */}</h1>
+              {frase.expandir && <div className="descfaq">{frase.texto}</div>}
+            </span>
+          ))}
+        </section>
+        <section>
+          {frases.slice(3, 6).map((frase, index) => (
+            <span key={index + 3} onClick={() => toggleExpansao(index + 3)}>
+              <h1>{frase.expandir ? <i><FiMinus /></i> : <i> <FiPlus /> </i>} Frase {index + 4}</h1>
+              {frase.expandir && <div className="descfaq">{frase.texto}</div>}
+            </span>
+          ))}
+        </section>
         </div>
-      ))}
       </div>
-    </div>
-    <div className="frasemission">
-      <h1>Na [Nome da Empresa], nossa paixão é transformar a visão dos nossos clientes em realidade. Trabalhamos com empreendedores ambiciosos que desejam causar impacto no mercado digital. Nosso foco está em desenvolver sites personalizados, projetados para envolver e conquistar o público-alvo. Acreditamos que o sucesso do pequeno negócio é nosso sucesso, e estamos comprometidos em fornecer soluções digitais excepcionais que os ajudem a prosperar.
-      </h1>
-    </div>
+      <div className='usheader'>
+        <h1>
+        Na [Nome da Empresa], nossa paixão é transformar a visão dos nossos clientes em realidade. Trabalhamos com empreendedores ambiciosos que desejam causar impacto no mercado digital. Nosso foco está em desenvolver sites personalizados, projetados para envolver e conquistar o público-alvo. Acreditamos que o sucesso do pequeno negócio é nosso sucesso, e estamos comprometidos em fornecer soluções digitais excepcionais que os ajudem a prosperar.
+        </h1>
+      </div>
+      <div className="usnavegation">
+        <section> <h1> Não sabe como funciona? </h1> <button> <i><AiOutlineInfoCircle /></i> <span>veja mais sobre <i><BiRightArrowAlt /></i></span></button></section>
+        <section> <h1> Serviço personalizado? </h1> <button> <i><AiOutlineInfoCircle /></i> <span>entre em contato <i><BiRightArrowAlt /></i></span></button></section>
+        <section> <h1> Ainda ficou com dúvidas? </h1> <button> <i><AiOutlineInfoCircle /></i> <span>entre em contato <i><BiRightArrowAlt /></i></span></button></section>
+      </div>
     </>
   );
 }

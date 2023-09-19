@@ -3,6 +3,9 @@ import Description from '../components/about/Description';
 import Mission from '../components/about/Mission';
 import '../css/About.css';
 import Nav2 from '../components/navegation/Nav2';
+import HeaderAbout from '../components/about/HeaderAbout';
+import Footer from './Footer';
+
 function About() {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
@@ -15,8 +18,10 @@ function About() {
     return  (
       <>
         <Nav2 />
-        <Description />
+        <HeaderAbout />
+        <Description id="about" />
         <Mission />
+        <Footer />
       </>
     )
 }
