@@ -16,17 +16,16 @@ header {
 }
 
 .fixheader {
-  height: 90vh;
+  height: auto;
 }
 .fiximage {
-  width: 50%;
-  height: 80vh;
-  top: 70px;
-  position: absolute;
+  width: 45%;
+  height: auto;
+  margin: 70px 30px 20px;
 }
 .fiximage img {
   width: 100%;
-  border-radius: 0px 0px 15px 0px;
+  border-radius: 0px 0px 15px 15px;
 }
 
 .fixtitle {
@@ -37,7 +36,7 @@ header {
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
-  margin-left: 700px;
+  margin-right: 80px;
   line-height: normal;
 }
 .imagecomponent {
