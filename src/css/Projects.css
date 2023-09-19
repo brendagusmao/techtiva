@@ -274,7 +274,7 @@
     transform: translate3d(0px, -10px, 0);
   }
 }
-@media screen and (min-width: 417px) {
+@media screen and (max-width: 417px) {
   .gridprojects {
     grid-gap: 0px;
     align-content: center;

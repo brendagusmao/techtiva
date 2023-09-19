@@ -88,6 +88,10 @@ function Nav2() {
         <Link onClick={projects} className="scrollto">Projetos</Link>
         <Link onClick={contact} className="scrollto">Contato</Link>
       </div>
+      <div className="boxlogin">
+        <button className='cadastre'> Cadastre-se</button>
+      <button className='login'> Login </button>
+      </div>
     </nav>
   );
 }
