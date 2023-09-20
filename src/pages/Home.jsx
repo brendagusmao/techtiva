@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import Services from './Services';
+import Header from '../components/home/Header';
+import Services from '../components/services/Information';
 import Projects from './Projects';
-import Avaliation from './Avaliation';
+import Avaliation from '../components/home/Avaliation';
 import Footer from './Footer';
 import Plans from '../components/services/Plans';
 // import About from './About';

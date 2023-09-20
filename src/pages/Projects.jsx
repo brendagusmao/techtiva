@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import {BsCheckLg, BsFillArrowRightCircleFill} from 'react-icons/bs';
 import '../css/Projects.css';
 import Web from '../images/image 12.png';
-import Oi from './oi';
+import Oi from '../components/Projects/oi';
 import { debounce, animeScroll } from '../components/scrollUtils';
 function Projects() {
     useEffect(() => {

@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
 import {AiFillStar} from 'react-icons/ai';
 import {MdArrowDropDown} from 'react-icons/md';
-import '../css/Avaliation.css';
+import '../../css/Avaliation.css';
 import { UserOutlined } from '@ant-design/icons';
-import MyContext from '../context/MyContext';
+import MyContext from '../../context/MyContext';
 import { Avatar } from 'antd';
 const url = 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg';
 
