@@ -4,7 +4,7 @@ import { animateScroll as scroll } from "react-scroll";
 import { Link } from "react-scroll";
 import { BiMouse } from 'react-icons/bi';
 import { BsChevronDoubleDown } from 'react-icons/bs';
-import Nav from '../navegation/Nav';
+import Nav from '../navegation/Nav2';
 import '../../css/Header.css';
 
 function Header() {

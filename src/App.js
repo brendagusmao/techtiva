@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import Header from './components/home/Header';
 import Services from './pages/Services';
 import About from './pages/About';
+import Contact from './pages/Contact';
 import Home from './pages/Home';
 import { Spin } from 'antd';
 
@@ -41,7 +42,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
               <Route path="/projects" element={<div>Em construção</div>} />
-              <Route path="/contact" element={<div>Em construção</div>} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </>
         )}

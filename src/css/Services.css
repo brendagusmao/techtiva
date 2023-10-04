@@ -234,10 +234,10 @@ line-height: normal;
 }
 
 .barplans {
-  width: 100%;
+  width: 100vw;
 }
 .barplans svg {
-  width: 100%;
+  width: 100vw;
 }
 .boxinf {
   width: 90%;
@@ -357,8 +357,8 @@ width: 500px;
 }
 
 .cardsales {
-  width: 80%;
-  margin: 50px auto;
+  width: 100%;
+  margin: 100px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -457,6 +457,56 @@ ul {
   margin: 10px 0px 0px 0px;
   justify-content: left;
   text-align: left!important;
+}
+.gradient-text {
+  background: linear-gradient(45deg, #ff6be4, #3b8aff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  text-decoration: underline;
+}
+.bar {
+  display: flex;
+  width: 100%;
+  margin-top: -70px;
+}
+:where(.css-dev-only-do-not-override-w8mnev).ant-btn-default {
+  background-color: #ffffff;
+  border-color: #ffffff!important;
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.02)!important;
+  font-family: DM Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;
+}
+
+.saibamais {
+  display: flex;
+}
+.saibamais {
+  display: flex;
+  background-color: #ffffff;
+  border:1px solid #ffffff;
+  padding: 10px 0px;
+  font-family: DM Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;
+outline: none;
+margin-top: 10px;
+align-items: center;
+}
+.saibamais i {
+  display: flex;
+  align-items: center;
+}
+.ant-modal-body p {
+  margin: 15px 0px;
 }
 li {
   margin: 5px;

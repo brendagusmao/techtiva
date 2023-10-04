@@ -12,7 +12,7 @@ function Plans() {
       <>
         <section className='maintwo' id="plans" /* className={className ? 'maintwo show' : 'maintwo'} */>
         <h1> Planos flexíveis para todas as necessidades </h1>
-        <span className='sales' data-anime="top">
+        <span className='sales'>
       <div className="two">
         <h2>Basic</h2>
         <ul>
@@ -92,7 +92,7 @@ function Plans() {
       </span>
       </section>
            <div className="barplans">
-           <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="105" viewBox="0 0 1440 105" fill="none">
+           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 105" fill="none">
      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 38.2279L120 56.2564C240 74.2849 480 110.342 720 104.332C960 98.3229 1200 50.2469 1320 26.2089L1440 2.17092V-106H1320C1200 -106 960 -106 720 -106C480 -106 240 -106 120 -106H0V38.2279Z" fill="#340D5F"/>
      </svg>
            </div>

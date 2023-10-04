@@ -16,7 +16,7 @@ function Nav() {
     };
     const contact = () => {
       // history.push('/new-path'); // Atualiza a URL para a nova rota
-      history('/contact');
+      history('#contact');
     };
     const about = () => {
       // history.push('/new-path'); // Atualiza a URL para a nova rota
@@ -58,6 +58,7 @@ function Nav() {
       const handleClick = () => {
         setShowElement(!showElement);
       };
+
   return  ( 
     <nav className={isScrolled ? 'container-fluid navcolor' : 'container-fluid'}>
     <div className="logo">

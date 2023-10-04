@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import {AiFillStar} from 'react-icons/ai';
+import {BsCheckLg, BsFillArrowRightCircleFill} from 'react-icons/bs';
 import {MdArrowDropDown} from 'react-icons/md';
 import '../../css/Avaliation.css';
 import { UserOutlined } from '@ant-design/icons';
@@ -57,6 +58,9 @@ function Avaliation() {
           </div>
         </div>
       </section>
+      <section className='cardmodelsplans'>
+        <button> entre em contato <i><BsFillArrowRightCircleFill /></i></button>
+     </section>
     </div>
     </>
   )
