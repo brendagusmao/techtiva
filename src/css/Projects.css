@@ -264,7 +264,7 @@
   top: 30%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 417px) {
   .gridprojects {
     display: flex;
     flex-direction: column;
@@ -272,19 +272,6 @@
   }
   [data-anime="top"] {
     transform: translate3d(0px, -10px, 0);
-  }
-}
-@media screen and (max-width: 417px) {
-  .gridprojects {
-    grid-gap: 0px;
-    align-content: center;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(1,1fr);
-    justify-items: center;
-    margin: 15px 5px 5px 5px;
-    justify-content: center;
-    align-items: start;
   }
   .Projects h1 {
     margin-top: 0px;

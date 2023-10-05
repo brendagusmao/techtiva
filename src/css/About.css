@@ -586,6 +586,20 @@ background-color: white;
   .fixheader {
       display: none;
   }
+  .contact {
+    flex-direction: column;
+  }
+  .contactsidebar {
+    width: 100%;
+    margin: 100px 50px 0px 40px;
+    }
+    .contactform {
+    width: 90%!important;
+        margin: 20px 20px;
+    }
+    .contactform button {
+        margin-left: 22%;
+    }
 }
 
 @media screen and (min-width: 1220px) {
