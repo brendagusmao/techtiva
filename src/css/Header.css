@@ -536,6 +536,11 @@ nav {
 .navcolor .toggle ul {
   background-color: #290b4fe3;
 }
+:where(.css-dev-only-do-not-override-w8mnev)[class^="ant-image"], :where(.css-dev-only-do-not-override-w8mnev)[class*=" ant-image"] {
+  font-family: DM Sans!important;
+  font-size: 14px;
+  box-sizing: border-box;
+}
 @media screen and (min-width: 1900px) {
   .bar {
     margin-top: -200px;
@@ -545,6 +550,11 @@ nav {
   .bar {
     margin-top: -155px;
 }
+}
+@media screen and (max-width: 376px) {
+  .sidebar {
+    width: 80vw!important;
+  }
 }
 @media screen and (max-width: 424px) {
   header {
@@ -619,5 +629,44 @@ nav {
   }
   .bar {
     margin-top: -110px;
+  }
+}
+@media screen and (max-width: 600px){
+  .desc {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 836px) { 
+  .headerimage {
+    height: 35vh;
+    margin: 205px 10px 20px 0px;
+}
+.oioi {
+  width: 220px !important;
+  }
+.oioi img {
+  width: 220px!important;
+  }
+  :where(.css-dev-only-do-not-override-w8mnev).ant-image {
+    position: relative;
+    display: inline-block;
+    width: 220px!important;
+}
+header {
+  display: flex;
+      align-items: flex-start;
+  }
+  .sidebar {
+  margin-top: 30%;
+  }
+  .imagecomponent {
+  margin-top: 30%;
+  }
+  .bar {
+      margin-top: -265px;
+  }
+  .card {
+      width: 190px;
+      margin-right: 1px;
   }
 }

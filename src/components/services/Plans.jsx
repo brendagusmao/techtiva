@@ -96,7 +96,7 @@ function Plans() {
      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 38.2279L120 56.2564C240 74.2849 480 110.342 720 104.332C960 98.3229 1200 50.2469 1320 26.2089L1440 2.17092V-106H1320C1200 -106 960 -106 720 -106C480 -106 240 -106 120 -106H0V38.2279Z" fill="#340D5F"/>
      </svg>
            </div>
-           <div className="boxinf">
+           <div className="boxinf"  data-anime="top">
              <section><img src="https://xceptive.com/wp-content/uploads/2022/10/Frame.svg" alt="image" /></section>
              <section className='infdesc'><h1>Um site que conte sua história de maneira cativante.</h1>
              <p>Um site eficaz é fundamental para atrair novos visitantes e convertê-los em defensores da sua marca. Quando as pessoas acessam sua página, é essencial que tenham uma experiência de usuário agradável e encontrem chamadas à ação claras.</p>

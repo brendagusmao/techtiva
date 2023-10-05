@@ -1,13 +1,24 @@
 import { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Button, Modal } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import Login from '../../pages/Login';
 import ToggleMenu from './toggleMenu';
-// import MyContext from '../context/MyContext';
 import ilogo from '../../images/icons svg/image 3.svg';
+// import MyContext from '../context/MyContext';
 import '../../css/Header.css';
 
 function Nav2() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
     const history = useNavigate();
 
     const home = () => {
@@ -90,9 +101,13 @@ function Nav2() {
       </div>
       <div className="boxlogin">
         <button className='cadastre'> Cadastre-se</button>
-      <button className='login'> Login </button>
+      <button className='login' onClick={handleModalOpen}> Login </button>
       </div>
+      {isModalOpen && (
+        <Login onClose={handleModalClose} />
+      )}
     </nav>
+    
   );
 }
 
