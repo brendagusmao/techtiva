@@ -34,7 +34,7 @@ para seu <span className='gradient-text'>negócio</span> </h1>
         <section className='headerimage' />
         <div className='icon-scroll' title="slow down" />
     </div>
-    <section className='bar'>
+    <section className='bar2'>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 66" fill="none">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L119.29 10.5926C240.71 22 479.29 44 720 49.7037C960.71 54.5926 1199.29 44 1320.71 38.2963L1440 32.5926V66H1320.71C1199.29 66 960.71 66 720 66C479.29 66 240.71 66 119.29 66H0V0Z" fill="#FCFCFC"/>
 </svg>

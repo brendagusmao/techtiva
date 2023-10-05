@@ -109,11 +109,11 @@
 
 [data-anime] {
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 [data-anime="left"] {
-  transform: translate3d(-50px, 0, 0);
+  transform: translate3d(-100px, 0, 0);
 }
 
 [data-anime="right"] {
@@ -121,7 +121,7 @@
 }
 
 [data-anime="top"] {
-  transform: translate3d(0px, -10px, 0);
+  transform: translate3d(0px, -160px, 0);
 }
 
 [data-anime].animate {

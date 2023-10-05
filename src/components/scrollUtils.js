@@ -14,16 +14,22 @@ export const debounce = function (func, wait, immediate) {
   };
   
   export const animeScroll = () => {
-    const target = document.querySelectorAll('[data-anime]');
-    const windowTop = window.pageYOffset + window.innerHeight * 0.75;
+    const targets = document.querySelectorAll('[data-anime]');
+    const windowTop = window.scrollY + window.innerHeight * 0.55;
     const animationClass = 'animate';
   
-    target.forEach(function (element) {
-      if (windowTop > element.offsetTop) {
+    targets.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top + window.scrollY;
+  
+      if (windowTop > elementTop) {
         element.classList.add(animationClass);
       } else {
         element.classList.remove(animationClass);
       }
     });
   };
+  
+  // Adicione um listener para chamar a função quando a página rolar
+  window.addEventListener('scroll', animeScroll);
+
   

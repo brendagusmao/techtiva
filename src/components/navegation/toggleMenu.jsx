@@ -36,10 +36,11 @@ function ToggleMenu() {
                 <button className='entrarbutton'> entrar</button>
                 <button className='entrarbutton'> cadastre-se</button>
               </div>
-              <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#home">home</a></li>
-              <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="#about">about</a></li>
-              <li><RiPagesFill className="icontoggle" /><a onClick={toggleMenu} href="#projects">projects</a></li>
-              <li><MdPermContactCalendar className="icontoggle" /><a onClick={toggleMenu} href="#contact">contact</a></li>
+              <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="/">inicio</a></li>
+              <li><SiAboutdotme className="icontoggle" /><a onClick={toggleMenu} href="/sobre">sobre nós</a></li>
+              <li><RiPagesFill className="icontoggle" /><a onClick={toggleMenu} href="/services">serviços</a></li>
+              <li><RiPagesFill className="icontoggle" /><a onClick={toggleMenu} href="/projects">projetos</a></li>
+              <li><MdPermContactCalendar className="icontoggle" /><a onClick={toggleMenu} href="/contact">contato</a></li>
             </ul>
           </div>
     </>

@@ -95,3 +95,9 @@ margin-top: 10px;
     margin: 10px 30px 60px 60px;
 }
     }
+    @media screen and (min-width: 680px) and (max-width: 836px) { 
+        .desc2 {
+          width: 300px;
+          height: 118px;
+        }
+        }

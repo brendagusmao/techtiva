@@ -18,9 +18,9 @@ function About() {
     return  (
       <>
         <Nav2 />
-        <HeaderAbout />
         <Description id="about" />
         <Mission />
+        <HeaderAbout />
         <Footer />
       </>
     )
