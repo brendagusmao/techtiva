@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import Description from '../components/about/Description';
 import Mission from '../components/about/Mission';
 import '../css/About.css';
@@ -7,13 +7,7 @@ import HeaderAbout from '../components/about/HeaderAbout';
 import Footer from './Footer';
 
 function About() {
-    const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => {
-    // Simule um tempo de carregamento de 2 segundos
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
+
 
     return  (
       <>

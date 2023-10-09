@@ -1,9 +1,7 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { CiUser } from 'react-icons/ci';
 import { BsFillTelephoneFill, BsTelephone } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
-import { UserOutlined } from '@ant-design/icons';
-import { Input } from 'antd';
 import '../css/About.css';
 import Nav2 from '../components/navegation/Nav2';
 import Footer from './Footer';

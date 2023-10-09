@@ -6,19 +6,30 @@ import Login from '../../pages/Login';
 import ToggleMenu from './toggleMenu';
 import ilogo from '../../images/icons svg/image 3.svg';
 // import MyContext from '../context/MyContext';
+import Cadastro from '../../pages/Cadastro';
 import '../../css/Header.css';
 
 function Nav2() {
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false); // Estado para o modal de login
+  const [isCadastroModalOpen, setIsCadastroModalOpen] = useState(false); // Estado para o modal de cadastro
 
-  const handleModalOpen = () => {
-    setIsModalOpen(true);
+  const handleLoginModalOpen = () => {
+      setIsLoginModalOpen(true);
   };
 
-  const handleModalClose = () => {
-    setIsModalOpen(false);
+  const handleLoginModalClose = () => {
+      setIsLoginModalOpen(false);
   };
+
+  const handleCadastroModalOpen = () => {
+      setIsCadastroModalOpen(true);
+  };
+
+  const handleCadastroModalClose = () => {
+      setIsCadastroModalOpen(false);
+  };
+
     const history = useNavigate();
 
     const home = () => {
@@ -100,12 +111,19 @@ function Nav2() {
         <Link onClick={contact} className="scrollto">Contato</Link>
       </div>
       <div className="boxlogin">
-        <button className='cadastre'> Cadastre-se</button>
-      <button className='login' onClick={handleModalOpen}> Login </button>
+      <button className='cadastre' onClick={handleCadastroModalOpen}> Cadastre-se</button>
+                    <button className='login' onClick={handleLoginModalOpen}> Login </button>
+                
       </div>
-      {isModalOpen && (
-        <Login onClose={handleModalClose} />
-      )}
+      {isLoginModalOpen && (
+                    <Login onClose={handleLoginModalClose} openLoginModal={handleCadastroModalOpen} />
+                )}
+
+                {isCadastroModalOpen && (
+                    // <Cadastro onClose={handleCadastroModalClose} />
+                    <Cadastro onClose={handleCadastroModalClose} openLoginModal={handleCadastroModalOpen} />
+
+                )}
     </nav>
     
   );
