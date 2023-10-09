@@ -469,7 +469,7 @@ ul {
 .bar2 {
   display: flex;
   width: 100%;
-  margin-top: -70px;
+  margin-top: -60px;
 }
 :where(.css-dev-only-do-not-override-w8mnev).ant-btn-default {
   background-color: #ffffff;
