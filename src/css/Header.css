@@ -50,6 +50,7 @@ header {
   background: url(../images/imageheader.png) no-repeat;
   background-size: cover;
   mix-blend-mode: lighten;
+  animation:scale-in-hor-right .5s cubic-bezier(.25,.46,.45,.94) both
 }
 nav {
   display: flex;
@@ -207,6 +208,7 @@ nav {
   margin-left: 5%;
   flex-direction: column;
 }
+@keyframes focus-in-expand{0%{letter-spacing:-.5em;filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
 .sidebar h1 {
   color: #fff;
   font-size: 32px;

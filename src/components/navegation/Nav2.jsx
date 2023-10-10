@@ -4,7 +4,7 @@ import { Button, Modal } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import Login from '../../pages/Login';
 import ToggleMenu from './toggleMenu';
-import ilogo from '../../images/icons svg/image 3.svg';
+import ilogo from '../../images/icons svg/logocolorida.svg';
 // import MyContext from '../context/MyContext';
 import Cadastro from '../../pages/Cadastro';
 import '../../css/Header.css';
@@ -90,7 +90,7 @@ function Nav2() {
       };
   return  ( 
     <nav className={isScrolled ? 'container-fluid navcolor' : 'container-fluid'}>
-    <div className="logo">
+    <div className="logo" onClick={home}>
     <img src={ilogo} alt="Techtiva Logo" />
       techtiva</div>
       <ToggleMenu />

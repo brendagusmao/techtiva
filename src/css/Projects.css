@@ -264,6 +264,264 @@
   top: 30%;
 }
 
+.sidebarprojects {
+  width: 17%;
+  margin-top: 70px;
+  height: 120vh;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-right: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  /* filter: drop-shadow(0px 0px 1px rgba(41, 41, 41, 0.088)); */
+  border-radius: 0px 0px 10px 10px;
+}
+.sidebarprojects h2, .sidebarprojects h1 {
+  margin-left: 15px;
+  font-size: 22px;
+  color: #242424;
+}
+.sidebarprojects h1 {
+  margin-top: 30px;
+}
+.sidebarprojects h2 {
+  margin-top: 40px;
+}
+.sidebarprojects h3 {
+  margin: 0px 12px;
+  color: #2f2f2f;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+}
+.sidebarprojects p {
+  margin: 40px 0px 10px 12px;
+  color: #3f3f3f;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 400;
+}
+.sidebarprojects ul {
+  margin: 20px 10px;
+  width: 80%;
+}
+.sidebarprojects li {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 10px;
+  color: #383838;
+  border-bottom:1px solid #dfdfdf ;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sidebarprojects li:hover {
+  color: #545454;
+}
+.active-item {
+  /* border-bottom:2px solid #cc5df8 !important; */
+  font-weight: 600 !important;
+  padding-left: 15px;
+  color: #a503e5!important;
+  transition: 0.5s;
+}
+.search-container {
+  display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+}
+.search-container input {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+   width: 75%;
+  margin: 0px 0px 0px 5px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid #eee;
+  /* border-radius: 10px; */
+  border-radius: 10px 0px 0px 10px;
+}
+.search-container button {
+  width: 40px;
+  outline: none;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #eee;
+  border-radius: 0px 10px 10px 0px;
+  margin: 0px 0px 0px 0px;
+  /* filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.166)); */
+}
+
+.testegrid {
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: stretch;
+}
+
+.projectsbox {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 80%;
+  height: auto;
+  animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Define as colunas responsivas */
+  gap: 20px; /* Espaço entre os itens */
+}
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Centraliza o conteúdo verticalmente */
+  text-align: left; /* Centraliza o texto horizontalmente */
+  border-radius: 2px;
+  background-color: white;
+  filter: drop-shadow(0px 0px 1px rgba(49, 49, 49, 0.166)); 
+}
+.project-item h3 {
+  margin: 20px 30px;
+  color: hsla(0,0%,7%,.874);
+    font-family: Wix Madefor Display,sans-serif;
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.project-item p {
+  margin: 0px 30px;
+  color: hsla(0,0%,7%,.874);
+    font-family: Inter;
+    font-size: 12px;
+    text-align: justify;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.project-item span {
+  margin: 10px 30px!important;
+  color: hsla(0, 0%, 20%, 0.874);
+    font-family: Inter;
+    font-size: 11px!important;
+    text-align: justify!important;
+    padding-bottom: 0px;
+}
+.project-item button {
+  margin: 10px 30px 20px 30px!important;
+  color: hsl(0, 0%, 17%)!important;
+  outline: none;
+  border: 1px solid #f0f0f0!important;
+  font-weight: 600!important;
+  border-radius: 10px!important;
+    padding: 10px!important;
+    background-color: rgb(250, 245, 253)!important;
+}
+.project-item img {
+  max-width: 100%; /* Limita a largura da imagem ao tamanho do container pai */
+  height: 250px; /* Mantém a proporção original da imagem */
+  object-fit: cover; /* Redimensiona a imagem para cobrir todo o espaço disponível */
+}
+
+.detailsmain {
+  display: flex;
+  align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 70px;
+}
+.back {
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #232323;
+    font-family: Poppins;
+    font-size: 13px;
+}
+.backicon {
+  margin-right: 5px;
+}
+.projectsbox span {
+  font-family: 'Poppins';
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+.projectsbox span p{
+  padding-bottom: 10px;
+}
+.projectsbox button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid transparent;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+.detailsmain .imagem {
+  width: 40%;
+  margin: 70px 0px 30px 100px;
+  animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both
+}
+.detailsmain .imagem img {
+  width: 100%;
+  border-radius: 5px;
+}
+@keyframes slide-in-top{0%{transform:translateY(-1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
+ @keyframes scale-in-hor-right{0%{transform:scaleX(0);transform-origin:100% 100%;opacity:1}100%{transform:scaleX(1);transform-origin:100% 100%;opacity:1}}
+.detailsdesc {
+  width: 50%;
+    margin: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 15px;
+    animation:scale-in-hor-right .5s cubic-bezier(.25,.46,.45,.94) both
+}
+.detailsdesc h3 {
+  color: hsla(0, 0%, 64%, 0.874);
+    font-family: Wix Madefor Display,sans-serif;
+    font-size: 13px;
+    margin: 10px 0px 0px 10px;
+    font-weight: 400;
+}
+.detailsdesc h1 {
+  color: hsla(0, 0%, 13%, 0.874);
+    font-family: Wix Madefor Display,sans-serif;
+    font-size: 17px;
+    margin: 15px 10px;
+}
+.detailsdesc p {
+  margin: 0px 10px;
+  color: hsla(0,0%,7%,.874);
+    font-family: Inter;
+    font-size: 12px;
+    text-align: justify;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.detailsdesc span {
+  margin: 10px 0px;
+  color: hsla(0, 0%, 20%, 0.874);
+    font-family: Inter;
+    font-size: 11px;
+    text-align: justify;
+    padding-bottom: 0px;
+}
 @media screen and (max-width: 417px) {
   .gridprojects {
     display: flex;

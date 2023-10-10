@@ -7,6 +7,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import { Spin } from 'antd';
+import SeeProjects from './pages/SeProjects';
+import ProjectDetails from './pages/ProjectsDetails';
 
 // Componente para redefinir a posição de rolagem
 function ScrollToTop() {
@@ -41,8 +43,9 @@ function App() {
               <Route path="/sobre" element={<About />} />
               <Route exact path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/projects" element={<div>Em construção</div>} />
+              <Route path="/projects" element={<SeeProjects /> }/>
               <Route path="/contact" element={<Contact />} />
+              <Route path="/projects/details/:projectId" element={<ProjectDetails />} />
             </Routes>
           </>
         )}

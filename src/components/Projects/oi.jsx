@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image } from 'antd';
 
-const Image1 = require('../../images/Rectangle (2).png');
+// const Image1 = require('../../images/Rectangle (2).png');
 
 const App = () => {
   return (

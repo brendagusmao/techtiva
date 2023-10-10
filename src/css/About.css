@@ -17,6 +17,7 @@
 }
 .about {
   margin-top: 50px;
+  animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both
 }
 .boxquality {
   display: flex;

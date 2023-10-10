@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import '../css/Footer.css';
 import MyContext from '../context/MyContext';
-import ilogo from '../images/icons svg/image 3.svg';
+import ilogo from '../images/icons svg/logocolorida.svg';
 
 function Footer() {
   return (
