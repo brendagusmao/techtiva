@@ -42,7 +42,7 @@ function GridProjects({ projects, selectedCategory, onProjectClick, toggleCatego
             <img src={project.imageUrl} alt={project.title} />
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <span>Categoria: {project.category}</span>
+            <div className='projectsinfodetails'>Categoria: {project.category}</div>
             <button>detalhes</button>
           </div>
         ))}
