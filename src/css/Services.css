@@ -794,17 +794,17 @@ position: absolute;
     animation:slide-in-top .2s ease-out both
   }
   .detailsmain {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 70px;
+    flex-direction: column!important;
+    width: 100%!important;
+    margin-top: 70px!important;
 }
 .detailsmain .imagem {
-    width: 92%;
-    margin: 100px 10px 30px 10px;
+    width: 92%!important;
+    margin: 100px 10px 30px 10px!important;
 }
 .detailsdesc {
-    width: 91%;
-    margin: 10px 10px;
+    width: 91%!important;
+    margin: 10px 10px!important;
 }
   .sidebarprojects h1 {
     margin: 20px 10px!important;
