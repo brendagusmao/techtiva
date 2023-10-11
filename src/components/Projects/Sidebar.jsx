@@ -55,7 +55,7 @@ function Sidebar({ categories, selectedCategory, onSelectCategory, onSearch }) {
           onChange={handleCategoryChange}
           defaultValue="Selecione uma categoria"
         >
-          <Select.Option value="all">Todas</Select.Option>
+          <Select.Option onClick={() => handleCategoryClick(null)}>Todas</Select.Option>
           {categories.map((category) => (
             <Select.Option key={category} value={category}>
               {category}
