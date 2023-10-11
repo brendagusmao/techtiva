@@ -374,7 +374,7 @@
   margin-left: 10px;
   width: 80%;
   height: auto;
-  animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both
+    animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
 }
 .projects {
   display: grid;

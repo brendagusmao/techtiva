@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Select } from 'antd';
 import { ImSearch } from 'react-icons/im';
+import { IoClose } from 'react-icons/io5'
 
 function Sidebar({ categories, selectedCategory, onSelectCategory, onSearch }) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -63,7 +64,7 @@ function Sidebar({ categories, selectedCategory, onSelectCategory, onSearch }) {
           ))}
         </Select>
         <button className="search-toggle" onClick={toggleSearchInput}>
-          {searchInputVisible ? 'X' : <ImSearch />}
+          {searchInputVisible ? <IoClose /> : <ImSearch />}
         </button>
       </div>
       <div className='desktop-controls'>
