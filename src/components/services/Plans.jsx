@@ -35,7 +35,7 @@ function Plans() {
       </Modal>
       </div>
       <div className="two medium">
-        <div className='popular'>Mais pupular
+        <div className='popular'>Mais popular
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="42" height="26" viewBox="0 0 42 26" fill="none">
             <path d="M21 26L0.215393 0.5L41.7846 0.5L21 26Z" fill="#C4FCFF"/>

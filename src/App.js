@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import { Spin } from 'antd';
 import SeeProjects from './pages/SeProjects';
 import ProjectDetails from './pages/ProjectsDetails';
+import ScrollToTopButton from './components/scrolltotop';
 
 // Componente para redefinir a posição de rolagem
 function ScrollToTop() {
@@ -28,17 +29,20 @@ function App() {
     // Simule um carregamento assíncrono
     setTimeout(() => {
       setLoading(false); // Quando o carregamento for concluído, altere o estado para false
-    }, 2000);
+    }, 1000);
   }, []);
 
   return (
     <Router>
       <>
         {loading ? (
+          <div className='loading'>
           <Spin size="large" className='hello'/>
+          </div>
         ) : (
           <>
-            <ScrollToTop /> {/* Adicione o componente ScrollToTop aqui */}
+            <ScrollToTopButton /> {/* Adicione o componente ScrollToTop aqui */}
+            <ScrollToTop />
             <Routes>
               <Route path="/sobre" element={<About />} />
               <Route exact path="/" element={<Home />} />
